@@ -1,0 +1,418 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (MS311 Series), page 1.
+
+Symbol Table
+
+    .__.$$$.=  2710 L   |     .__.ABS.=  0000 G   |     .__.CPU.=  0000 L
+    .__.H$L.=  0001 L   |   8 A$demo21   003C GR  |   8 A$demo21   0421 GR
+  8 A$demo21   0423 GR  |   8 A$demo21   0425 GR  |   8 A$demo21   0426 GR
+  8 A$demo21   0428 GR  |   8 A$demo21   042A GR  |   8 A$demo21   042C GR
+  8 A$demo21   042E GR  |   8 A$demo21   0430 GR  |   8 A$demo21   0432 GR
+  8 A$demo21   003E GR  |   8 A$demo21   0433 GR  |   8 A$demo21   0435 GR
+  8 A$demo21   0437 GR  |   8 A$demo21   0438 GR  |   8 A$demo21   043A GR
+  8 A$demo21   043B GR  |   8 A$demo21   043D GR  |   8 A$demo21   043F GR
+  8 A$demo21   0040 GR  |   8 A$demo21   0441 GR  |   8 A$demo21   0442 GR
+  8 A$demo21   0444 GR  |   8 A$demo21   0446 GR  |   8 A$demo21   0447 GR
+  8 A$demo21   0449 GR  |   8 A$demo21   044A GR  |   8 A$demo21   044C GR
+  8 A$demo21   044E GR  |   8 A$demo21   0450 GR  |   8 A$demo21   0041 GR
+  8 A$demo21   0451 GR  |   8 A$demo21   0452 GR  |   8 A$demo21   0454 GR
+  8 A$demo21   0456 GR  |   8 A$demo21   0458 GR  |   8 A$demo21   0043 GR
+  8 A$demo21   045A GR  |   8 A$demo21   045C GR  |   8 A$demo21   045D GR
+  8 A$demo21   045F GR  |   8 A$demo21   0460 GR  |   8 A$demo21   0462 GR
+  8 A$demo21   0463 GR  |   8 A$demo21   0465 GR  |   8 A$demo21   0045 GR
+  8 A$demo21   0047 GR  |   8 A$demo21   0466 GR  |   8 A$demo21   0467 GR
+  8 A$demo21   0469 GR  |   8 A$demo21   0049 GR  |   8 A$demo21   046A GR
+  8 A$demo21   046C GR  |   8 A$demo21   046E GR  |   8 A$demo21   046F GR
+  8 A$demo21   0471 GR  |   8 A$demo21   0473 GR  |   8 A$demo21   004A GR
+  8 A$demo21   0475 GR  |   8 A$demo21   0476 GR  |   8 A$demo21   0478 GR
+  8 A$demo21   047A GR  |   8 A$demo21   004C GR  |   8 A$demo21   047B GR
+  8 A$demo21   047D GR  |   8 A$demo21   047E GR  |   8 A$demo21   0480 GR
+  8 A$demo21   0481 GR  |   8 A$demo21   0483 GR  |   8 A$demo21   0485 GR
+  8 A$demo21   004D GR  |   8 A$demo21   0487 GR  |   8 A$demo21   0489 GR
+  8 A$demo21   048A GR  |   8 A$demo21   048C GR  |   8 A$demo21   048E GR
+  8 A$demo21   0490 GR  |   8 A$demo21   0492 GR  |   8 A$demo21   004F GR
+  8 A$demo21   0494 GR  |   8 A$demo21   0496 GR  |   8 A$demo21   0498 GR
+  8 A$demo21   049A GR  |   8 A$demo21   049C GR  |   8 A$demo21   049E GR
+  8 A$demo21   04A0 GR  |   8 A$demo21   0051 GR  |   8 A$demo21   04A1 GR
+  8 A$demo21   04A3 GR  |   8 A$demo21   04A4 GR  |   8 A$demo21   04A6 GR
+  8 A$demo21   04A8 GR  |   8 A$demo21   04AA GR  |   8 A$demo21   04AB GR
+  8 A$demo21   0052 GR  |   8 A$demo21   04AD GR  |   8 A$demo21   04AF GR
+  8 A$demo21   04B1 GR  |   8 A$demo21   04B3 GR  |   8 A$demo21   04B5 GR
+  8 A$demo21   04B7 GR  |   8 A$demo21   0054 GR  |   8 A$demo21   04B9 GR
+  8 A$demo21   04BA GR  |   8 A$demo21   04BC GR  |   8 A$demo21   04BD GR
+  8 A$demo21   04BF GR  |   8 A$demo21   04C0 GR  |   8 A$demo21   0056 GR
+  8 A$demo21   04C2 GR  |   8 A$demo21   04C4 GR  |   8 A$demo21   04C6 GR
+  8 A$demo21   04C8 GR  |   8 A$demo21   04CA GR  |   8 A$demo21   04CB GR
+  8 A$demo21   0057 GR  |   8 A$demo21   04CD GR  |   8 A$demo21   04CF GR
+  8 A$demo21   04D1 GR  |   8 A$demo21   04D2 GR  |   8 A$demo21   04D4 GR
+  8 A$demo21   04D6 GR  |   8 A$demo21   04D8 GR  |   8 A$demo21   04DA GR
+  8 A$demo21   0059 GR  |   8 A$demo21   04DB GR  |   8 A$demo21   005B GR
+  8 A$demo21   04DD GR  |   8 A$demo21   04DF GR  |   8 A$demo21   04E1 GR
+  8 A$demo21   04E3 GR  |   8 A$demo21   04E5 GR  |   8 A$demo21   04E6 GR
+  8 A$demo21   04E8 GR  |   8 A$demo21   04EA GR  |   8 A$demo21   04EC GR
+  8 A$demo21   04EE GR  |   8 A$demo21   04EF GR  |   8 A$demo21   04F1 GR
+  8 A$demo21   04F2 GR  |   8 A$demo21   04F4 GR  |   8 A$demo21   04F6 GR
+  8 A$demo21   04F7 GR  |   8 A$demo21   04F8 GR  |   8 A$demo21   005D GR
+  8 A$demo21   04F9 GR  |   8 A$demo21   04FA GR  |   8 A$demo21   04FC GR
+  8 A$demo21   04FE GR  |   8 A$demo21   0500 GR  |   8 A$demo21   0501 GR
+  8 A$demo21   0503 GR  |   8 A$demo21   005F GR  |   8 A$demo21   0504 GR
+  8 A$demo21   0506 GR  |   8 A$demo21   0507 GR  |   8 A$demo21   0508 GR
+  8 A$demo21   0509 GR  |   8 A$demo21   050A GR  |   8 A$demo21   050B GR
+  8 A$demo21   050C GR  |   8 A$demo21   050D GR  |   8 A$demo21   050E GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (MS311 Series), page 2.
+
+Symbol Table
+
+  8 A$demo21   050F GR  |   8 A$demo21   0510 GR  |   8 A$demo21   0061 GR
+  8 A$demo21   0512 GR  |   8 A$demo21   0513 GR  |   8 A$demo21   0063 GR
+  8 A$demo21   0514 GR  |   8 A$demo21   0515 GR  |   8 A$demo21   0516 GR
+  8 A$demo21   0518 GR  |   8 A$demo21   0519 GR  |   8 A$demo21   0065 GR
+  8 A$demo21   051A GR  |   8 A$demo21   051C GR  |   8 A$demo21   051D GR
+  8 A$demo21   051F GR  |   8 A$demo21   0520 GR  |   8 A$demo21   0521 GR
+  8 A$demo21   0523 GR  |   8 A$demo21   0524 GR  |   8 A$demo21   0526 GR
+  8 A$demo21   0067 GR  |   8 A$demo21   0527 GR  |   8 A$demo21   0528 GR
+  8 A$demo21   0068 GR  |   8 A$demo21   0529 GR  |   8 A$demo21   052A GR
+  8 A$demo21   052B GR  |   8 A$demo21   006A GR  |   8 A$demo21   052C GR
+  8 A$demo21   052E GR  |   8 A$demo21   052F GR  |   8 A$demo21   0530 GR
+  8 A$demo21   006C GR  |   8 A$demo21   0531 GR  |   8 A$demo21   0533 GR
+  8 A$demo21   0534 GR  |   8 A$demo21   006E GR  |   8 A$demo21   0535 GR
+  8 A$demo21   0536 GR  |   8 A$demo21   0538 GR  |   8 A$demo21   0539 GR
+  8 A$demo21   053B GR  |   8 A$demo21   053C GR  |   8 A$demo21   006F GR
+  8 A$demo21   053D GR  |   8 A$demo21   053F GR  |   8 A$demo21   0071 GR
+  8 A$demo21   0541 GR  |   8 A$demo21   0543 GR  |   8 A$demo21   0544 GR
+  8 A$demo21   0546 GR  |   8 A$demo21   0548 GR  |   8 A$demo21   054A GR
+  8 A$demo21   054C GR  |   8 A$demo21   054E GR  |   8 A$demo21   054F GR
+  8 A$demo21   0550 GR  |   8 A$demo21   0552 GR  |   8 A$demo21   0553 GR
+  8 A$demo21   0073 GR  |   8 A$demo21   0554 GR  |   8 A$demo21   0555 GR
+  8 A$demo21   0557 GR  |   8 A$demo21   0559 GR  |   8 A$demo21   055B GR
+  8 A$demo21   055D GR  |   8 A$demo21   055E GR  |   8 A$demo21   0560 GR
+  8 A$demo21   0562 GR  |   8 A$demo21   0564 GR  |   8 A$demo21   0075 GR
+  8 A$demo21   0566 GR  |   8 A$demo21   0567 GR  |   8 A$demo21   0569 GR
+  8 A$demo21   056A GR  |   8 A$demo21   0077 GR  |   8 A$demo21   056B GR
+  8 A$demo21   056D GR  |   8 A$demo21   056E GR  |   8 A$demo21   0570 GR
+  8 A$demo21   0078 GR  |   8 A$demo21   0571 GR  |   8 A$demo21   0573 GR
+  8 A$demo21   0574 GR  |   8 A$demo21   0576 GR  |   8 A$demo21   0578 GR
+  8 A$demo21   007A GR  |   8 A$demo21   057A GR  |   8 A$demo21   057B GR
+  8 A$demo21   057C GR  |   8 A$demo21   057E GR  |   8 A$demo21   007B GR
+  8 A$demo21   057F GR  |   8 A$demo21   0580 GR  |   8 A$demo21   0582 GR
+  8 A$demo21   0584 GR  |   8 A$demo21   007D GR  |   8 A$demo21   0585 GR
+  8 A$demo21   0587 GR  |   8 A$demo21   0588 GR  |   8 A$demo21   058A GR
+  8 A$demo21   058C GR  |   8 A$demo21   058D GR  |   8 A$demo21   058F GR
+  8 A$demo21   0590 GR  |   8 A$demo21   007F GR  |   8 A$demo21   0591 GR
+  8 A$demo21   0593 GR  |   8 A$demo21   0081 GR  |   8 A$demo21   0595 GR
+  8 A$demo21   0596 GR  |   8 A$demo21   0598 GR  |   8 A$demo21   0599 GR
+  8 A$demo21   0083 GR  |   8 A$demo21   059A GR  |   8 A$demo21   059C GR
+  8 A$demo21   059E GR  |   8 A$demo21   05A0 GR  |   8 A$demo21   05A2 GR
+  8 A$demo21   05A4 GR  |   8 A$demo21   05A5 GR  |   8 A$demo21   05A6 GR
+  8 A$demo21   05A7 GR  |   8 A$demo21   05A9 GR  |   8 A$demo21   0085 GR
+  8 A$demo21   05AA GR  |   8 A$demo21   05AB GR  |   8 A$demo21   0086 GR
+  8 A$demo21   05AC GR  |   8 A$demo21   05AE GR  |   8 A$demo21   05AF GR
+  8 A$demo21   05B1 GR  |   8 A$demo21   05B2 GR  |   8 A$demo21   0087 GR
+  8 A$demo21   0089 GR  |   8 A$demo21   008B GR  |   8 A$demo21   008D GR
+  8 A$demo21   008F GR  |   8 A$demo21   0091 GR  |   8 A$demo21   0093 GR
+  8 A$demo21   0094 GR  |   8 A$demo21   0096 GR  |   8 A$demo21   0098 GR
+  8 A$demo21   009A GR  |   8 A$demo21   009C GR  |   8 A$demo21   009E GR
+  8 A$demo21   00A0 GR  |   8 A$demo21   00A2 GR  |   8 A$demo21   00A3 GR
+  8 A$demo21   00A5 GR  |   8 A$demo21   00A7 GR  |   8 A$demo21   00A9 GR
+  8 A$demo21   00AB GR  |   8 A$demo21   00AD GR  |   8 A$demo21   00AF GR
+  8 A$demo21   00B1 GR  |   8 A$demo21   00B3 GR  |   8 A$demo21   00B5 GR
+  8 A$demo21   00B7 GR  |   8 A$demo21   00B9 GR  |   8 A$demo21   00BB GR
+  8 A$demo21   00BD GR  |   8 A$demo21   00BF GR  |   8 A$demo21   00C1 GR
+  8 A$demo21   00C3 GR  |   8 A$demo21   00C5 GR  |   8 A$demo21   00C7 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (MS311 Series), page 3.
+
+Symbol Table
+
+  8 A$demo21   00C9 GR  |   8 A$demo21   00CB GR  |   8 A$demo21   00CD GR
+  8 A$demo21   00CF GR  |   8 A$demo21   00D1 GR  |   8 A$demo21   00D3 GR
+  8 A$demo21   00D5 GR  |   8 A$demo21   00D6 GR  |   8 A$demo21   00D8 GR
+  8 A$demo21   00DA GR  |   8 A$demo21   00DC GR  |   8 A$demo21   00DE GR
+  8 A$demo21   00E0 GR  |   8 A$demo21   00E2 GR  |   8 A$demo21   00E4 GR
+  8 A$demo21   00E6 GR  |   8 A$demo21   00E8 GR  |   8 A$demo21   00EA GR
+  8 A$demo21   00EC GR  |   8 A$demo21   00EE GR  |   8 A$demo21   00F0 GR
+  8 A$demo21   00F2 GR  |   8 A$demo21   00F4 GR  |   8 A$demo21   00F6 GR
+  8 A$demo21   00F8 GR  |   8 A$demo21   00FA GR  |   8 A$demo21   00FC GR
+  8 A$demo21   00FE GR  |   8 A$demo21   0100 GR  |   8 A$demo21   0102 GR
+  8 A$demo21   0104 GR  |   8 A$demo21   0106 GR  |   8 A$demo21   0108 GR
+  8 A$demo21   0109 GR  |   8 A$demo21   010B GR  |   8 A$demo21   010C GR
+  8 A$demo21   010E GR  |   8 A$demo21   0000 GR  |   8 A$demo21   010F GR
+  8 A$demo21   0111 GR  |   8 A$demo21   0112 GR  |   8 A$demo21   0114 GR
+  8 A$demo21   0116 GR  |   8 A$demo21   0118 GR  |   8 A$demo21   0119 GR
+  8 A$demo21   011B GR  |   8 A$demo21   011D GR  |   8 A$demo21   011F GR
+  8 A$demo21   0120 GR  |   8 A$demo21   0122 GR  |   8 A$demo21   0124 GR
+  8 A$demo21   0126 GR  |   8 A$demo21   0128 GR  |   8 A$demo21   012A GR
+  8 A$demo21   012C GR  |   8 A$demo21   012E GR  |   8 A$demo21   0130 GR
+  8 A$demo21   0132 GR  |   8 A$demo21   0134 GR  |   8 A$demo21   0136 GR
+  8 A$demo21   0138 GR  |   8 A$demo21   013A GR  |   8 A$demo21   013B GR
+  8 A$demo21   013C GR  |   8 A$demo21   013E GR  |   8 A$demo21   0140 GR
+  8 A$demo21   0142 GR  |   8 A$demo21   0144 GR  |   8 A$demo21   0146 GR
+  8 A$demo21   0148 GR  |   8 A$demo21   0149 GR  |   8 A$demo21   014B GR
+  8 A$demo21   014C GR  |   8 A$demo21   014D GR  |   8 A$demo21   014F GR
+  8 A$demo21   0151 GR  |   8 A$demo21   0153 GR  |   8 A$demo21   0155 GR
+  8 A$demo21   0157 GR  |   8 A$demo21   0159 GR  |   8 A$demo21   015B GR
+  8 A$demo21   015D GR  |   8 A$demo21   015F GR  |   8 A$demo21   0161 GR
+  8 A$demo21   0163 GR  |   8 A$demo21   0165 GR  |   8 A$demo21   0167 GR
+  8 A$demo21   0169 GR  |   8 A$demo21   016A GR  |   8 A$demo21   016C GR
+  8 A$demo21   016E GR  |   8 A$demo21   0170 GR  |   8 A$demo21   0172 GR
+  8 A$demo21   0174 GR  |   8 A$demo21   0176 GR  |   8 A$demo21   0178 GR
+  8 A$demo21   017A GR  |   8 A$demo21   017B GR  |   8 A$demo21   017C GR
+  8 A$demo21   017E GR  |   8 A$demo21   017F GR  |   8 A$demo21   0181 GR
+  8 A$demo21   0182 GR  |   8 A$demo21   0183 GR  |   8 A$demo21   0184 GR
+  8 A$demo21   0186 GR  |   8 A$demo21   0187 GR  |   8 A$demo21   0189 GR
+  8 A$demo21   018B GR  |   8 A$demo21   018D GR  |   8 A$demo21   018F GR
+  8 A$demo21   0191 GR  |   8 A$demo21   0193 GR  |   8 A$demo21   0195 GR
+  8 A$demo21   0197 GR  |   8 A$demo21   0199 GR  |   8 A$demo21   019B GR
+  8 A$demo21   019D GR  |   8 A$demo21   019F GR  |   8 A$demo21   01A1 GR
+  8 A$demo21   01A3 GR  |   8 A$demo21   01A5 GR  |   8 A$demo21   01A7 GR
+  8 A$demo21   01A9 GR  |   8 A$demo21   01AB GR  |   8 A$demo21   01AD GR
+  8 A$demo21   01AE GR  |   8 A$demo21   01B0 GR  |   8 A$demo21   01B2 GR
+  8 A$demo21   01B3 GR  |   8 A$demo21   01B5 GR  |   8 A$demo21   01B7 GR
+  8 A$demo21   01B9 GR  |   8 A$demo21   01BB GR  |   8 A$demo21   01BC GR
+  8 A$demo21   01BD GR  |   8 A$demo21   01BE GR  |   8 A$demo21   01C0 GR
+  8 A$demo21   01C2 GR  |   8 A$demo21   01C4 GR  |   8 A$demo21   01C6 GR
+  8 A$demo21   01C7 GR  |   8 A$demo21   01C9 GR  |   8 A$demo21   01CB GR
+  8 A$demo21   01CD GR  |   8 A$demo21   01CF GR  |   8 A$demo21   01D1 GR
+  8 A$demo21   01D2 GR  |   8 A$demo21   01D4 GR  |   8 A$demo21   01D6 GR
+  8 A$demo21   01D7 GR  |   8 A$demo21   01D9 GR  |   8 A$demo21   01DB GR
+  8 A$demo21   01DD GR  |   8 A$demo21   01DF GR  |   8 A$demo21   01E0 GR
+  8 A$demo21   01E2 GR  |   8 A$demo21   01E4 GR  |   8 A$demo21   01E5 GR
+  8 A$demo21   01E7 GR  |   8 A$demo21   01E9 GR  |   8 A$demo21   01EB GR
+  8 A$demo21   01ED GR  |   8 A$demo21   01EF GR  |   8 A$demo21   01F1 GR
+  8 A$demo21   01F3 GR  |   8 A$demo21   01F5 GR  |   8 A$demo21   01F7 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (MS311 Series), page 4.
+
+Symbol Table
+
+  8 A$demo21   01F9 GR  |   8 A$demo21   01FB GR  |   8 A$demo21   01FD GR
+  8 A$demo21   01FF GR  |   8 A$demo21   0200 GR  |   8 A$demo21   0202 GR
+  8 A$demo21   0204 GR  |   8 A$demo21   0206 GR  |   8 A$demo21   0208 GR
+  8 A$demo21   0209 GR  |   8 A$demo21   020B GR  |   8 A$demo21   020C GR
+  8 A$demo21   020D GR  |   8 A$demo21   020E GR  |   8 A$demo21   0210 GR
+  8 A$demo21   0212 GR  |   8 A$demo21   0214 GR  |   8 A$demo21   0216 GR
+  8 A$demo21   0217 GR  |   8 A$demo21   0219 GR  |   8 A$demo21   021B GR
+  8 A$demo21   021C GR  |   8 A$demo21   021D GR  |   8 A$demo21   021F GR
+  8 A$demo21   0221 GR  |   8 A$demo21   0222 GR  |   8 A$demo21   0224 GR
+  8 A$demo21   0226 GR  |   8 A$demo21   0228 GR  |   8 A$demo21   022A GR
+  8 A$demo21   022C GR  |   8 A$demo21   022D GR  |   8 A$demo21   022F GR
+  8 A$demo21   0231 GR  |   8 A$demo21   0233 GR  |   8 A$demo21   0235 GR
+  8 A$demo21   0236 GR  |   8 A$demo21   0238 GR  |   8 A$demo21   0239 GR
+  8 A$demo21   023B GR  |   8 A$demo21   023C GR  |   8 A$demo21   023E GR
+  8 A$demo21   023F GR  |   8 A$demo21   0241 GR  |   8 A$demo21   0243 GR
+  8 A$demo21   0245 GR  |   8 A$demo21   0247 GR  |   8 A$demo21   0249 GR
+  8 A$demo21   024A GR  |   8 A$demo21   024B GR  |   8 A$demo21   024C GR
+  8 A$demo21   024E GR  |   8 A$demo21   0250 GR  |   8 A$demo21   0251 GR
+  8 A$demo21   0253 GR  |   8 A$demo21   0255 GR  |   8 A$demo21   0257 GR
+  8 A$demo21   0259 GR  |   8 A$demo21   025B GR  |   8 A$demo21   025D GR
+  8 A$demo21   025F GR  |   8 A$demo21   0261 GR  |   8 A$demo21   0263 GR
+  8 A$demo21   0265 GR  |   8 A$demo21   0267 GR  |   8 A$demo21   0269 GR
+  8 A$demo21   026B GR  |   8 A$demo21   026D GR  |   8 A$demo21   026F GR
+  8 A$demo21   0271 GR  |   8 A$demo21   0273 GR  |   8 A$demo21   0275 GR
+  8 A$demo21   0277 GR  |   8 A$demo21   0279 GR  |   8 A$demo21   027B GR
+  8 A$demo21   0002 GR  |   8 A$demo21   027D GR  |   8 A$demo21   027F GR
+  8 A$demo21   0281 GR  |   8 A$demo21   0283 GR  |   8 A$demo21   0284 GR
+  8 A$demo21   0286 GR  |   8 A$demo21   0288 GR  |   8 A$demo21   028A GR
+  8 A$demo21   0004 GR  |   8 A$demo21   028C GR  |   8 A$demo21   028D GR
+  8 A$demo21   028E GR  |   8 A$demo21   0290 GR  |   8 A$demo21   0291 GR
+  8 A$demo21   0293 GR  |   8 A$demo21   0006 GR  |   8 A$demo21   0295 GR
+  8 A$demo21   0297 GR  |   8 A$demo21   0299 GR  |   8 A$demo21   029B GR
+  8 A$demo21   029D GR  |   8 A$demo21   029F GR  |   8 A$demo21   0008 GR
+  8 A$demo21   02A1 GR  |   8 A$demo21   02A3 GR  |   8 A$demo21   02A5 GR
+  8 A$demo21   02A6 GR  |   8 A$demo21   02A8 GR  |   8 A$demo21   02AA GR
+  8 A$demo21   02AC GR  |   8 A$demo21   02AE GR  |   8 A$demo21   02B0 GR
+  8 A$demo21   02B2 GR  |   8 A$demo21   02B4 GR  |   8 A$demo21   02B6 GR
+  8 A$demo21   000A GR  |   8 A$demo21   000C GR  |   8 A$demo21   02B7 GR
+  8 A$demo21   02B9 GR  |   8 A$demo21   02BB GR  |   8 A$demo21   02BD GR
+  8 A$demo21   02BE GR  |   8 A$demo21   02C0 GR  |   8 A$demo21   02C2 GR
+  8 A$demo21   02C3 GR  |   8 A$demo21   02C5 GR  |   8 A$demo21   02C6 GR
+  8 A$demo21   02C7 GR  |   8 A$demo21   02C9 GR  |   8 A$demo21   02CB GR
+  8 A$demo21   02CD GR  |   8 A$demo21   02CE GR  |   8 A$demo21   000E GR
+  8 A$demo21   02D0 GR  |   8 A$demo21   02D2 GR  |   8 A$demo21   02D4 GR
+  8 A$demo21   02D5 GR  |   8 A$demo21   02D7 GR  |   8 A$demo21   02D9 GR
+  8 A$demo21   02DB GR  |   8 A$demo21   02DC GR  |   8 A$demo21   02DE GR
+  8 A$demo21   0010 GR  |   8 A$demo21   02DF GR  |   8 A$demo21   02E1 GR
+  8 A$demo21   02E2 GR  |   8 A$demo21   02E4 GR  |   8 A$demo21   02E6 GR
+  8 A$demo21   02E8 GR  |   8 A$demo21   02EA GR  |   8 A$demo21   02EB GR
+  8 A$demo21   02EC GR  |   8 A$demo21   02ED GR  |   8 A$demo21   02EF GR
+  8 A$demo21   02F1 GR  |   8 A$demo21   02F3 GR  |   8 A$demo21   02F5 GR
+  8 A$demo21   02F7 GR  |   8 A$demo21   02F9 GR  |   8 A$demo21   02FA GR
+  8 A$demo21   02FC GR  |   8 A$demo21   02FE GR  |   8 A$demo21   0300 GR
+  8 A$demo21   0012 GR  |   8 A$demo21   0302 GR  |   8 A$demo21   0304 GR
+  8 A$demo21   0306 GR  |   8 A$demo21   0308 GR  |   8 A$demo21   030A GR
+  8 A$demo21   030B GR  |   8 A$demo21   030D GR  |   8 A$demo21   030F GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (MS311 Series), page 5.
+
+Symbol Table
+
+  8 A$demo21   0311 GR  |   8 A$demo21   0312 GR  |   8 A$demo21   0314 GR
+  8 A$demo21   0316 GR  |   8 A$demo21   0318 GR  |   8 A$demo21   031A GR
+  8 A$demo21   031C GR  |   8 A$demo21   0014 GR  |   8 A$demo21   0016 GR
+  8 A$demo21   031D GR  |   8 A$demo21   0018 GR  |   8 A$demo21   031F GR
+  8 A$demo21   0321 GR  |   8 A$demo21   0323 GR  |   8 A$demo21   0325 GR
+  8 A$demo21   0327 GR  |   8 A$demo21   0329 GR  |   8 A$demo21   032B GR
+  8 A$demo21   032D GR  |   8 A$demo21   032F GR  |   8 A$demo21   0331 GR
+  8 A$demo21   0333 GR  |   8 A$demo21   0335 GR  |   8 A$demo21   001A GR
+  8 A$demo21   0337 GR  |   8 A$demo21   0339 GR  |   8 A$demo21   001C GR
+  8 A$demo21   001E GR  |   8 A$demo21   033B GR  |   8 A$demo21   033D GR
+  8 A$demo21   033F GR  |   8 A$demo21   0341 GR  |   8 A$demo21   0343 GR
+  8 A$demo21   0020 GR  |   8 A$demo21   0345 GR  |   8 A$demo21   0347 GR
+  8 A$demo21   0349 GR  |   8 A$demo21   034B GR  |   8 A$demo21   034D GR
+  8 A$demo21   034F GR  |   8 A$demo21   0351 GR  |   8 A$demo21   0022 GR
+  8 A$demo21   0352 GR  |   8 A$demo21   0354 GR  |   8 A$demo21   0356 GR
+  8 A$demo21   0357 GR  |   8 A$demo21   0359 GR  |   8 A$demo21   035B GR
+  8 A$demo21   035D GR  |   8 A$demo21   035E GR  |   8 A$demo21   0360 GR
+  8 A$demo21   0362 GR  |   8 A$demo21   0363 GR  |   8 A$demo21   0365 GR
+  8 A$demo21   0367 GR  |   8 A$demo21   0368 GR  |   8 A$demo21   036A GR
+  8 A$demo21   036C GR  |   8 A$demo21   036D GR  |   8 A$demo21   036F GR
+  8 A$demo21   0371 GR  |   8 A$demo21   0373 GR  |   8 A$demo21   0024 GR
+  8 A$demo21   0026 GR  |   8 A$demo21   0374 GR  |   8 A$demo21   0375 GR
+  8 A$demo21   0377 GR  |   8 A$demo21   0378 GR  |   8 A$demo21   037A GR
+  8 A$demo21   037C GR  |   8 A$demo21   037E GR  |   8 A$demo21   037F GR
+  8 A$demo21   0381 GR  |   8 A$demo21   0383 GR  |   8 A$demo21   0384 GR
+  8 A$demo21   0386 GR  |   8 A$demo21   0388 GR  |   8 A$demo21   038A GR
+  8 A$demo21   038C GR  |   8 A$demo21   038E GR  |   8 A$demo21   038F GR
+  8 A$demo21   0390 GR  |   8 A$demo21   0028 GR  |   8 A$demo21   0392 GR
+  8 A$demo21   0394 GR  |   8 A$demo21   0395 GR  |   8 A$demo21   0396 GR
+  8 A$demo21   0398 GR  |   8 A$demo21   0399 GR  |   8 A$demo21   039B GR
+  8 A$demo21   039D GR  |   8 A$demo21   039E GR  |   8 A$demo21   03A0 GR
+  8 A$demo21   03A1 GR  |   8 A$demo21   03A3 GR  |   8 A$demo21   03A4 GR
+  8 A$demo21   03A6 GR  |   8 A$demo21   03A8 GR  |   8 A$demo21   03A9 GR
+  8 A$demo21   002A GR  |   8 A$demo21   03AA GR  |   8 A$demo21   03AC GR
+  8 A$demo21   03AE GR  |   8 A$demo21   03B0 GR  |   8 A$demo21   03B1 GR
+  8 A$demo21   03B3 GR  |   8 A$demo21   002C GR  |   8 A$demo21   03B5 GR
+  8 A$demo21   002E GR  |   8 A$demo21   03B6 GR  |   8 A$demo21   03B8 GR
+  8 A$demo21   03BA GR  |   8 A$demo21   03BC GR  |   8 A$demo21   03BE GR
+  8 A$demo21   03C0 GR  |   8 A$demo21   03C2 GR  |   8 A$demo21   03C4 GR
+  8 A$demo21   0030 GR  |   8 A$demo21   03C6 GR  |   8 A$demo21   03C7 GR
+  8 A$demo21   03C9 GR  |   8 A$demo21   03CB GR  |   8 A$demo21   03CD GR
+  8 A$demo21   03CF GR  |   8 A$demo21   0032 GR  |   8 A$demo21   03D1 GR
+  8 A$demo21   03D3 GR  |   8 A$demo21   03D4 GR  |   8 A$demo21   03D5 GR
+  8 A$demo21   0034 GR  |   8 A$demo21   03D6 GR  |   8 A$demo21   03D8 GR
+  8 A$demo21   03DA GR  |   8 A$demo21   03DC GR  |   8 A$demo21   03DE GR
+  8 A$demo21   03E0 GR  |   8 A$demo21   0036 GR  |   8 A$demo21   03E2 GR
+  8 A$demo21   03E4 GR  |   8 A$demo21   03E6 GR  |   8 A$demo21   03E8 GR
+  8 A$demo21   03EA GR  |   8 A$demo21   03EC GR  |   8 A$demo21   03EE GR
+  8 A$demo21   03F0 GR  |   8 A$demo21   03F2 GR  |   8 A$demo21   03F4 GR
+  8 A$demo21   03F5 GR  |   8 A$demo21   0038 GR  |   8 A$demo21   003A GR
+  8 A$demo21   03F6 GR  |   8 A$demo21   03F8 GR  |   8 A$demo21   03F9 GR
+  8 A$demo21   03FB GR  |   8 A$demo21   03FD GR  |   8 A$demo21   03FF GR
+  8 A$demo21   0401 GR  |   8 A$demo21   0403 GR  |   8 A$demo21   0405 GR
+  8 A$demo21   0407 GR  |   8 A$demo21   0408 GR  |   8 A$demo21   040A GR
+  8 A$demo21   040B GR  |   8 A$demo21   040D GR  |   8 A$demo21   040F GR
+  8 A$demo21   0411 GR  |   8 A$demo21   0413 GR  |   8 A$demo21   0415 GR
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (MS311 Series), page 6.
+
+Symbol Table
+
+  8 A$demo21   0416 GR  |   8 A$demo21   0418 GR  |   8 A$demo21   041A GR
+  8 A$demo21   041C GR  |   8 A$demo21   041E GR  |   8 A$demo21   0420 GR
+  2 STK00      0003 GR  |   2 STK01      0002 GR  |   2 STK02      0001 GR
+  8 _00001_D   0153 R   |   8 _00002_D   0167 R   |   8 _00003_D   0172 R
+  8 _00106_D   04E6 R   |   8 _00108_D   04EF R   |   8 _00110_D   04F7 R
+  8 _00126_D   04A8 R   |   8 _00131_D   04B9 R   |   8 _00134_D   0498 R
+  8 _00136_D   04BF R   |   8 _00167_D   0471 R   |   8 _00169_D   0478 R
+  8 _00170_D   047A R   |   8 _00176_D   0435 R   |   8 _00179_D   0418 R
+  8 _00180_D   0451 R   |   8 _00182_D   0458 R   |   8 _00188_D   03EC R
+  8 _00190_D   03DC R   |   8 _00193_D   03F2 R   |   8 _00199_D   03C2 R
+  8 _00200_D   03C6 R   |   8 _00202_D   03CB R   |   8 _00204_D   03D4 R
+  8 _00211_D   0392 R   |   8 _00213_D   03AC R   |   8 _00220_D   0343 R
+  8 _00222_D   036C R   |   8 _00228_D   032B R   |   8 _00231_D   0337 R
+  8 _00234_D   032D R   |   8 _00244_D   02C0 R   |   8 _00245_D   0308 R
+  8 _00246_D   0312 R   |   8 _00269_D   0130 R   |   8 _00273_D   015F R
+  8 _00279_D   0233 R   |   8 _00283_D   028C R   |   8 _00284_D   027B R
+  8 _00290_D   0269 R   |   8 _00292_D   0295 R   |   8 _00294_D   02A1 R
+  8 _00295_D   02A5 R   |   8 _00297_D   02AA R   |   8 _00298_D   02AC R
+  8 _00370_D   00EA R   |   8 _00372_D   00F2 R   |   8 _00373_D   00F6 R
+  8 _00382_D   0024 R   |   8 _00383_D   005D R   |   8 _00384_D   0061 R
+  8 _00386_D   008B R   |   8 _00388_D   0091 R   |   8 _00391_D   003C R
+  8 _00392_D   0093 R   |   8 _00394_D   0096 R   |   8 _00398_D   00D1 R
+  8 _00399_D   00D5 R   |   8 _00403_D   00C7 R   |   8 _00407_D   00BB R
+  8 _00410_D   00B1 R   |   8 _00413_D   00A7 R   |   8 _00416_D   0028 R
+  8 _00465_D   004C R   |   8 _00466_D   0057 R   |     _ACC       **** GX
+    _ADCG      **** GX  |     _ADCON     **** GX  |     _ADCRDY =  00C7 L
+    _ADH       **** GX  |     _ADL       **** GX  |     _ADP_IND   **** GX
+    _ADP_VPH   **** GX  |     _ADP_VPL   **** GX  |     _ADP_VPL   **** GX
+    _BEEPC     **** GX  |     _BGCON     **** GX  |     _C      =  00C4 L
+    _CRYPT     **** GX  |     _DACON     **** GX  |     _DAC_PH    **** GX
+    _DAC_PL    **** GX  |     _DCLAMP    **** GX  |     _DMAH      **** GX
+    _DMAHL     **** GX  |     _DMAL      **** GX  |     _EA     =  00C8 L
+    _FILTERG   **** GX  |     _ICE0      **** GX  |     _ICE1      **** GX
+    _ICE2      **** GX  |     _ICE3      **** GX  |     _ICE4      **** GX
+    _INTIO  =  00C5 L   |     _IO        **** GX  |     _IOCMP     **** GX
+    _IOCNT     **** GX  |     _IODIR     **** GX  |     _IOMASK    **** GX
+    _IOR       **** GX  |     _IOWK      **** GX  |     _IOWKDR    **** GX
+    _IROMDH    **** GX  |     _IROMDL    **** GX  |     _IROMDLH   **** GX
+    _LVDCON    **** GX  |     _LVRCON    **** GX  |     _OFFSETH   **** GX
+    _OFFSETL   **** GX  |     _OFFSETL   **** GX  |     _OV     =  00C2 L
+    _PA0    =  00E0 L   |     _PA1    =  00E1 L   |     _PA2    =  00E2 L
+    _PA3    =  00E3 L   |     _PA4    =  00E4 L   |     _PA5    =  00E5 L
+    _PA6    =  00E6 L   |     _PA7    =  00E7 L   |     _PAG       **** GX
+    _PB0    =  00F0 L   |     _PB1    =  00F1 L   |     _PB2    =  00F2 L
+    _PB3    =  00F3 L   |     _PTRCH     **** GX  |     _PTRCL     **** GX
+    _PWRH      **** GX  |     _PWRHL     **** GX  |     _PWRL      **** GX
+    _RAMP0     **** GX  |     _RAMP0H    **** GX  |     _RAMP0IN   **** GX
+    _RAMP0L    **** GX  |     _RAMP0LH   **** GX  |     _RAMP0UW   **** GX
+    _RAMP1     **** GX  |     _RAMP1H    **** GX  |     _RAMP1IN   **** GX
+    _RAMP1IN   **** GX  |     _RAMP1L    **** GX  |     _RAMP1LH   **** GX
+    _RAMP1UW   **** GX  |     _RCCON     **** GX  |     _RECMUTE   **** GX
+    _ROMP      **** GX  |     _ROMPH     **** GX  |     _ROMPINC   **** GX
+    _ROMPINC   **** GX  |     _ROMPL     **** GX  |     _ROMPLH    **** GX
+    _ROMPUW    **** GX  |     _SPIH      **** GX  |     _SPIL      **** GX
+    _SPIM      **** GX  |     _SPIMH     **** GX  |     _SPIOP     **** GX
+    _SPI_BAN   **** GX  |     _SPKC      **** GX  |     _SSPIC     **** GX
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (MS311 Series), page 7.
+
+Symbol Table
+
+    _SSPIH     **** GX  |     _SSPIL     **** GX  |     _SSPIM     **** GX
+    _STACKH    **** GX  |     _STACKL    **** GX  |     _SYSC      **** GX
+    _T1OV   =  00C3 L   |     _TCIF   =  00C9 L   |     _THRLD     **** GX
+    _TIMERC    **** GX  |     _TOV    =  00C0 G   |     _ULAWC     **** GX
+    _WTOV   =  00C6 L   |     _Z      =  00C1 L   |     _ZC        **** GX
+  8 __COMMON   04F9 GR  |   8 __COMMON   0504 GR  |   8 __COMMON   0508 GR
+  8 __COMMON   050D GR  |   8 __COMMON   0514 GR  |   8 __COMMON   051A GR
+  8 __COMMON   0521 GR  |   8 __COMMON   0528 GR  |   8 __COMMON   052C GR
+  8 __COMMON   0531 GR  |   8 __COMMON   0535 GR  |   8 __COMMON   053D GR
+  8 __COMMON   0550 GR  |   8 __COMMON   056B GR  |   8 __COMMON   0571 GR
+  8 __COMMON   057B GR  |   8 __COMMON   057F GR  |   8 __COMMON   0585 GR
+  8 __COMMON   0591 GR  |   8 __COMMON   059A GR  |   8 __COMMON   05A6 GR
+  8 __COMMON   05AA GR  |   7 __PARA_S   0000 GR  |     __ms311_   **** GX
+    __sp_dec   **** GX  |     __sp_inc   **** GX  |     _adcrdy =  00C7 L
+    _api_amp   **** GX  |     _api_amp   **** GX  |     _api_amp   **** GX
+    _api_bee   **** GX  |     _api_bee   **** GX  |     _api_ent   **** GX
+    _api_ent   **** GX  |     _api_pla   **** GX  |     _api_pla   **** GX
+    _api_pla   **** GX  |     _api_pla   **** GX  |     _api_rec   **** GX
+    _api_rec   **** GX  |     _api_rec   **** GX  |     _api_rec   **** GX
+    _api_rec   **** GX  |     _api_rec   **** GX  |     _api_set   **** GX
+    _api_tim   **** GX  |   3 _beep_ti   0005 GR  |     _c      =  00C4 L
+  8 _callbac   03B6 GR  |     _ea     =  00C8 L   |   8 _enter_a   00FC GR
+  8 _enter_i   033B GR  |   8 _enter_p   03F6 GR  |   8 _enter_r   0374 GR
+  8 _get_key   04DD GR  |   8 _init      04C2 GR  |   2 _init_io   0000 GR
+    _intio  =  00C5 L   |   3 _key_cod   0003 GR  |   8 _key_mac   047B GR
+  3 _key_sta   0000 GR  |   3 _key_tim   0004 GR  |   3 _last_st   0002 GR
+  8 _main      0002 GR  |   3 _new_end   0024 GR  |   3 _newpwr    001D GR
+  3 _oldinde   0008 GR  |   3 _oldpred   000C GR  |   3 _oldpwr    0014 GR
+    _ov     =  00C2 L   |     _pa0    =  00E0 L   |     _pa1    =  00E1 L
+    _pa2    =  00E2 L   |     _pa3    =  00E3 L   |     _pa4    =  00E4 L
+    _pa5    =  00E5 L   |     _pa6    =  00E6 L   |     _pa7    =  00E7 L
+    _pb0    =  00F0 L   |     _pb1    =  00F1 L   |     _pb2    =  00F2 L
+    _pb3    =  00F3 L   |   3 _playing   0029 GR  |   3 _pwravg    001F GR
+  3 _rec_sta   0006 GR  |   3 _rindex    001C GR  |   8 _simple_   02B7 GR
+  3 _sleep_t   0007 GR  |   8 _sys_amp   00DC GR  |   8 _sys_pla   031D GR
+  8 _sys_rec   0120 GR  |   3 _sys_sta   0001 GR  |     _t1ov   =  00C3 L
+    _tcif   =  00C9 L   |   3 _the_ind   0023 GR  |   3 _the_pre   0021 GR
+  3 _the_sta   0026 GR  |   8 _timer_r   0466 GR  |     _tov    =  00C0 L
+  8 _wait_be   03D6 GR  |     _wtov   =  00C6 L   |     _z      =  00C1 L
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (MS311 Series), page 8.
+
+Area Table
+
+   0 _CODE      size    0   flags    0
+   1 ms322sfr   size    0   flags  204
+   2 shareban   size    4   flags    4
+   3 DSEG       size   2A   flags    0
+   4 ISEG       size    0   flags    0
+   5 XSEG       size    0   flags    0
+   6 XISEG      size    0   flags    0
+   7 SSEG       size    1   flags    4
+   8 STARTUP_   size  5B3   flags   20
+

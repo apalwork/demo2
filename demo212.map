@@ -1,0 +1,944 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+.  .ABS.               00000000    00000000 =           0. bytes (ABS,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000000  .__.ABS.  |    00000000  _IOR      |    00000000  l_ISEG   
+     00000000  l_ISEGR   |    00000000  l_XISEG   |    00000000  l_XSEG   
+     00000000  l__CODE   |    00000000  l_ms322sf |    00000000  s_STARTUP
+     00000000  s_ms322sf |    00000001  _IODIR    |    00000001  l_SSEG   
+     00000002  _IO       |    00000003  _IOWK     |    00000004  _IOWKDR  
+     00000004  l_shareba |    00000005  _TIMERC   |    00000006  _THRLD   
+     00000007  _RAMP0    |    00000007  _RAMP0L   |    00000007  _RAMP0LH 
+     00000007  _RAMP0UW  |    00000008  _RAMP0H   |    00000009  _RAMP1   
+     00000009  _RAMP1L   |    00000009  _RAMP1LH  |    00000009  _RAMP1UW 
+     0000000A  _RAMP1H   |    0000000B  _PTRCL    |    0000000C  _PTRCH   
+     0000000D  _ROMP     |    0000000D  _ROMPL    |    0000000D  _ROMPLH  
+     0000000D  _ROMPUW   |    0000000E  _ROMPH    |    0000000F  _BEEPC   
+     00000010  _ULAWC    |    00000011  _STACKL   |    00000012  _STACKH  
+     00000013  _ADCON    |    00000014  _DACON    |    00000015  _SYSC    
+     00000016  _SPIM     |    00000016  _SPIMH    |    00000017  _SPIH    
+     00000018  _SPIOP    |    00000019  _SPI_BANK |    0000001A  _ADP_IND 
+     0000001B  _ADP_VPL  |    0000001B  _ADP_VPLH |    0000001C  _ADP_VPH 
+     0000001D  _ADL      |    0000001E  _ADH      |    0000001F  _ZC      
+     00000020  _ADCG     |    00000021  _DAC_PL   |    00000022  _DAC_PH  
+     00000023  _PAG      |    00000024  _DMAHL    |    00000024  _DMAL    
+     00000025  _DMAH     |    00000026  _SPIL     |    00000027  _IOMASK  
+     00000028  _IOCMP    |    00000029  _IOCNT    |    0000002B  _LVDCON  
+     0000002C  _LVRCON   |    0000002D  _OFFSETL  |    0000002D  _OFFSETLH
+     0000002E  _OFFSETH  |    0000002F  _RCCON    |    00000030  _BGCON   
+     00000031  _CRYPT    |    00000031  _PWRHL    |    00000031  _PWRL    
+     00000032  _PWRH     |    00000033  _IROMDL   |    00000033  _IROMDLH 
+     00000034  _IROMDH   |    00000035  _RECMUTE  |    00000035  l_DSEG   
+     00000036  _FILTERG  |    00000037  _SPKC     |    00000038  _DCLAMP  
+     00000039  _SSPIC    |    0000003A  _SSPIL    |    0000003B  _SSPIM   
+     0000003C  _SSPIH    |    00000041  _ICE0     |    00000042  _ICE1    
+     00000043  _ICE2     |    00000044  _ICE3     |    00000045  _ICE4    
+     000000C0  _TOV      |    00000102  _RAMP0INC |    00000103  _RAMP1INC
+     00000103  _RAMP1INC |    00000105  _ROMPINC  |    00000105  _ROMPINC2
+     00000106  _ACC      |    00000204  l_SEGC    |    000005B3  l_STARTUP
+     000005B3  s_CSEG    |    00000800  l_CSEG    |    00000DB3  s_SEGC   
+     00008000  s__CODE   |    00008000  s_shareba |    00008004  s_DSEG   
+     00008039  s_ISEG    |    00008039  s_SSEG    |    00008039  s_XISEG  
+     00008039  s_XSEG    |    0000803A  s_ISEGR  
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+sharebank              00008000    00000004 =           4. bytes (REL,OVR)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00008000  _init_io_ |    00008001  STK02     |    00008002  STK01    
+     00008003  STK00    
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+DSEG                   00008004    00000035 =          53. bytes (REL,CON)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00008004  _key_stat |    00008005  _sys_stat |    00008006  _last_str
+     00008007  _key_code |    00008008  _key_time |    00008009  _beep_tim
+     0000800A  _rec_stag |    0000800B  _sleep_ti |    0000800C  _oldindex
+     00008010  _oldpredi |    00008018  _oldpwr   |    00008020  _rindex  
+     00008021  _newpwr   |    00008023  _pwravg   |    00008025  _the_pred
+     00008027  _the_inde |    00008028  _new_end_ |    0000802A  _the_stat
+     0000802D  _playing_ |    0000802E  _api_ramp |    0000802F  _api_endp
+     00008031  _api_ulaw |    00008032  _api_targ |    00008033  _api_spi_
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+SSEG                   00008039    00000001 =           1. bytes (REL,OVR)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00008039  __PARA_ST
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+STARTUP_CSEG           00000000    000005B3 =        1459. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000000  A$demo212 |    00000002  A$demo212 |    00000002  _main    
+     00000004  A$demo212 |    00000006  A$demo212 |    00000008  A$demo212
+     0000000A  A$demo212 |    0000000C  A$demo212 |    0000000E  A$demo212
+     00000010  A$demo212 |    00000012  A$demo212 |    00000014  A$demo212
+     00000016  A$demo212 |    00000018  A$demo212 |    0000001A  A$demo212
+     0000001C  A$demo212 |    0000001E  A$demo212 |    00000020  A$demo212
+     00000022  A$demo212 |    00000024  A$demo212 |    00000026  A$demo212
+     00000028  A$demo212 |    0000002A  A$demo212 |    0000002C  A$demo212
+     0000002E  A$demo212 |    00000030  A$demo212 |    00000032  A$demo212
+     00000034  A$demo212 |    00000036  A$demo212 |    00000038  A$demo212
+     0000003A  A$demo212 |    0000003C  A$demo212 |    0000003E  A$demo212
+     00000040  A$demo212 |    00000041  A$demo212 |    00000043  A$demo212
+     00000045  A$demo212 |    00000047  A$demo212 |    00000049  A$demo212
+     0000004A  A$demo212 |    0000004C  A$demo212 |    0000004D  A$demo212
+     0000004F  A$demo212 |    00000051  A$demo212 |    00000052  A$demo212
+     00000054  A$demo212 |    00000056  A$demo212 |    00000057  A$demo212
+     00000059  A$demo212 |    0000005B  A$demo212 |    0000005D  A$demo212
+     0000005F  A$demo212 |    00000061  A$demo212 |    00000063  A$demo212
+     00000065  A$demo212 |    00000067  A$demo212 |    00000068  A$demo212
+     0000006A  A$demo212 |    0000006C  A$demo212 |    0000006E  A$demo212
+     0000006F  A$demo212 |    00000071  A$demo212 |    00000073  A$demo212
+     00000075  A$demo212 |    00000077  A$demo212 |    00000078  A$demo212
+     0000007A  A$demo212 |    0000007B  A$demo212 |    0000007D  A$demo212
+     0000007F  A$demo212 |    00000081  A$demo212 |    00000083  A$demo212
+     00000085  A$demo212 |    00000086  A$demo212 |    00000087  A$demo212
+     00000089  A$demo212 |    0000008B  A$demo212 |    0000008D  A$demo212
+     0000008F  A$demo212 |    00000091  A$demo212 |    00000093  A$demo212
+     00000094  A$demo212 |    00000096  A$demo212 |    00000098  A$demo212
+     0000009A  A$demo212 |    0000009C  A$demo212 |    0000009E  A$demo212
+     000000A0  A$demo212 |    000000A2  A$demo212 |    000000A3  A$demo212
+     000000A5  A$demo212 |    000000A7  A$demo212 |    000000A9  A$demo212
+     000000AB  A$demo212 |    000000AD  A$demo212 |    000000AF  A$demo212
+     000000B1  A$demo212 |    000000B3  A$demo212 |    000000B5  A$demo212
+     000000B7  A$demo212 |    000000B9  A$demo212 |    000000BB  A$demo212
+     000000BD  A$demo212 |    000000BF  A$demo212 |    000000C1  A$demo212
+     000000C3  A$demo212 |    000000C5  A$demo212 |    000000C7  A$demo212
+     000000C9  A$demo212 |    000000CB  A$demo212 |    000000CD  A$demo212
+     000000CF  A$demo212 |    000000D1  A$demo212 |    000000D3  A$demo212
+     000000D5  A$demo212 |    000000D6  A$demo212 |    000000D8  A$demo212
+     000000DA  A$demo212 |    000000DC  A$demo212 |    000000DC  _sys_amp 
+     000000DE  A$demo212 |    000000E0  A$demo212 |    000000E2  A$demo212
+     000000E4  A$demo212 |    000000E6  A$demo212 |    000000E8  A$demo212
+     000000EA  A$demo212 |    000000EC  A$demo212 |    000000EE  A$demo212
+     000000F0  A$demo212 |    000000F2  A$demo212 |    000000F4  A$demo212
+     000000F6  A$demo212 |    000000F8  A$demo212 |    000000FA  A$demo212
+     000000FC  A$demo212 |    000000FC  _enter_am |    000000FE  A$demo212
+     00000100  A$demo212 |    00000102  A$demo212 |    00000104  A$demo212
+     00000106  A$demo212 |    00000108  A$demo212 |    00000109  A$demo212
+     0000010B  A$demo212 |    0000010C  A$demo212 |    0000010E  A$demo212
+     0000010F  A$demo212 |    00000111  A$demo212 |    00000112  A$demo212
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+STARTUP_CSEG           00000000    000005B3 =        1459. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000114  A$demo212 |    00000116  A$demo212 |    00000118  A$demo212
+     00000119  A$demo212 |    0000011B  A$demo212 |    0000011D  A$demo212
+     0000011F  A$demo212 |    00000120  A$demo212 |    00000120  _sys_rec 
+     00000122  A$demo212 |    00000124  A$demo212 |    00000126  A$demo212
+     00000128  A$demo212 |    0000012A  A$demo212 |    0000012C  A$demo212
+     0000012E  A$demo212 |    00000130  A$demo212 |    00000132  A$demo212
+     00000134  A$demo212 |    00000136  A$demo212 |    00000138  A$demo212
+     0000013A  A$demo212 |    0000013B  A$demo212 |    0000013C  A$demo212
+     0000013E  A$demo212 |    00000140  A$demo212 |    00000142  A$demo212
+     00000144  A$demo212 |    00000146  A$demo212 |    00000148  A$demo212
+     00000149  A$demo212 |    0000014B  A$demo212 |    0000014C  A$demo212
+     0000014D  A$demo212 |    0000014F  A$demo212 |    00000151  A$demo212
+     00000153  A$demo212 |    00000155  A$demo212 |    00000157  A$demo212
+     00000159  A$demo212 |    0000015B  A$demo212 |    0000015D  A$demo212
+     0000015F  A$demo212 |    00000161  A$demo212 |    00000163  A$demo212
+     00000165  A$demo212 |    00000167  A$demo212 |    00000169  A$demo212
+     0000016A  A$demo212 |    0000016C  A$demo212 |    0000016E  A$demo212
+     00000170  A$demo212 |    00000172  A$demo212 |    00000174  A$demo212
+     00000176  A$demo212 |    00000178  A$demo212 |    0000017A  A$demo212
+     0000017B  A$demo212 |    0000017C  A$demo212 |    0000017E  A$demo212
+     0000017F  A$demo212 |    00000181  A$demo212 |    00000182  A$demo212
+     00000183  A$demo212 |    00000184  A$demo212 |    00000186  A$demo212
+     00000187  A$demo212 |    00000189  A$demo212 |    0000018B  A$demo212
+     0000018D  A$demo212 |    0000018F  A$demo212 |    00000191  A$demo212
+     00000193  A$demo212 |    00000195  A$demo212 |    00000197  A$demo212
+     00000199  A$demo212 |    0000019B  A$demo212 |    0000019D  A$demo212
+     0000019F  A$demo212 |    000001A1  A$demo212 |    000001A3  A$demo212
+     000001A5  A$demo212 |    000001A7  A$demo212 |    000001A9  A$demo212
+     000001AB  A$demo212 |    000001AD  A$demo212 |    000001AE  A$demo212
+     000001B0  A$demo212 |    000001B2  A$demo212 |    000001B3  A$demo212
+     000001B5  A$demo212 |    000001B7  A$demo212 |    000001B9  A$demo212
+     000001BB  A$demo212 |    000001BC  A$demo212 |    000001BD  A$demo212
+     000001BE  A$demo212 |    000001C0  A$demo212 |    000001C2  A$demo212
+     000001C4  A$demo212 |    000001C6  A$demo212 |    000001C7  A$demo212
+     000001C9  A$demo212 |    000001CB  A$demo212 |    000001CD  A$demo212
+     000001CF  A$demo212 |    000001D1  A$demo212 |    000001D2  A$demo212
+     000001D4  A$demo212 |    000001D6  A$demo212 |    000001D7  A$demo212
+     000001D9  A$demo212 |    000001DB  A$demo212 |    000001DD  A$demo212
+     000001DF  A$demo212 |    000001E0  A$demo212 |    000001E2  A$demo212
+     000001E4  A$demo212 |    000001E5  A$demo212 |    000001E7  A$demo212
+     000001E9  A$demo212 |    000001EB  A$demo212 |    000001ED  A$demo212
+     000001EF  A$demo212 |    000001F1  A$demo212 |    000001F3  A$demo212
+     000001F5  A$demo212 |    000001F7  A$demo212 |    000001F9  A$demo212
+     000001FB  A$demo212 |    000001FD  A$demo212 |    000001FF  A$demo212
+     00000200  A$demo212 |    00000202  A$demo212 |    00000204  A$demo212
+     00000206  A$demo212 |    00000208  A$demo212 |    00000209  A$demo212
+     0000020B  A$demo212 |    0000020C  A$demo212 |    0000020D  A$demo212
+     0000020E  A$demo212 |    00000210  A$demo212 |    00000212  A$demo212
+     00000214  A$demo212 |    00000216  A$demo212 |    00000217  A$demo212
+     00000219  A$demo212 |    0000021B  A$demo212 |    0000021C  A$demo212
+     0000021D  A$demo212 |    0000021F  A$demo212 |    00000221  A$demo212
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+STARTUP_CSEG           00000000    000005B3 =        1459. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000222  A$demo212 |    00000224  A$demo212 |    00000226  A$demo212
+     00000228  A$demo212 |    0000022A  A$demo212 |    0000022C  A$demo212
+     0000022D  A$demo212 |    0000022F  A$demo212 |    00000231  A$demo212
+     00000233  A$demo212 |    00000235  A$demo212 |    00000236  A$demo212
+     00000238  A$demo212 |    00000239  A$demo212 |    0000023B  A$demo212
+     0000023C  A$demo212 |    0000023E  A$demo212 |    0000023F  A$demo212
+     00000241  A$demo212 |    00000243  A$demo212 |    00000245  A$demo212
+     00000247  A$demo212 |    00000249  A$demo212 |    0000024A  A$demo212
+     0000024B  A$demo212 |    0000024C  A$demo212 |    0000024E  A$demo212
+     00000250  A$demo212 |    00000251  A$demo212 |    00000253  A$demo212
+     00000255  A$demo212 |    00000257  A$demo212 |    00000259  A$demo212
+     0000025B  A$demo212 |    0000025D  A$demo212 |    0000025F  A$demo212
+     00000261  A$demo212 |    00000263  A$demo212 |    00000265  A$demo212
+     00000267  A$demo212 |    00000269  A$demo212 |    0000026B  A$demo212
+     0000026D  A$demo212 |    0000026F  A$demo212 |    00000271  A$demo212
+     00000273  A$demo212 |    00000275  A$demo212 |    00000277  A$demo212
+     00000279  A$demo212 |    0000027B  A$demo212 |    0000027D  A$demo212
+     0000027F  A$demo212 |    00000281  A$demo212 |    00000283  A$demo212
+     00000284  A$demo212 |    00000286  A$demo212 |    00000288  A$demo212
+     0000028A  A$demo212 |    0000028C  A$demo212 |    0000028D  A$demo212
+     0000028E  A$demo212 |    00000290  A$demo212 |    00000291  A$demo212
+     00000293  A$demo212 |    00000295  A$demo212 |    00000297  A$demo212
+     00000299  A$demo212 |    0000029B  A$demo212 |    0000029D  A$demo212
+     0000029F  A$demo212 |    000002A1  A$demo212 |    000002A3  A$demo212
+     000002A5  A$demo212 |    000002A6  A$demo212 |    000002A8  A$demo212
+     000002AA  A$demo212 |    000002AC  A$demo212 |    000002AE  A$demo212
+     000002B0  A$demo212 |    000002B2  A$demo212 |    000002B4  A$demo212
+     000002B6  A$demo212 |    000002B7  A$demo212 |    000002B7  _simple_s
+     000002B9  A$demo212 |    000002BB  A$demo212 |    000002BD  A$demo212
+     000002BE  A$demo212 |    000002C0  A$demo212 |    000002C2  A$demo212
+     000002C3  A$demo212 |    000002C5  A$demo212 |    000002C6  A$demo212
+     000002C7  A$demo212 |    000002C9  A$demo212 |    000002CB  A$demo212
+     000002CD  A$demo212 |    000002CE  A$demo212 |    000002D0  A$demo212
+     000002D2  A$demo212 |    000002D4  A$demo212 |    000002D5  A$demo212
+     000002D7  A$demo212 |    000002D9  A$demo212 |    000002DB  A$demo212
+     000002DC  A$demo212 |    000002DE  A$demo212 |    000002DF  A$demo212
+     000002E1  A$demo212 |    000002E2  A$demo212 |    000002E4  A$demo212
+     000002E6  A$demo212 |    000002E8  A$demo212 |    000002EA  A$demo212
+     000002EB  A$demo212 |    000002EC  A$demo212 |    000002ED  A$demo212
+     000002EF  A$demo212 |    000002F1  A$demo212 |    000002F3  A$demo212
+     000002F5  A$demo212 |    000002F7  A$demo212 |    000002F9  A$demo212
+     000002FA  A$demo212 |    000002FC  A$demo212 |    000002FE  A$demo212
+     00000300  A$demo212 |    00000302  A$demo212 |    00000304  A$demo212
+     00000306  A$demo212 |    00000308  A$demo212 |    0000030A  A$demo212
+     0000030B  A$demo212 |    0000030D  A$demo212 |    0000030F  A$demo212
+     00000311  A$demo212 |    00000312  A$demo212 |    00000314  A$demo212
+     00000316  A$demo212 |    00000318  A$demo212 |    0000031A  A$demo212
+     0000031C  A$demo212 |    0000031D  A$demo212 |    0000031D  _sys_play
+     0000031F  A$demo212 |    00000321  A$demo212 |    00000323  A$demo212
+     00000325  A$demo212 |    00000327  A$demo212 |    00000329  A$demo212
+     0000032B  A$demo212 |    0000032D  A$demo212 |    0000032F  A$demo212
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+STARTUP_CSEG           00000000    000005B3 =        1459. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000331  A$demo212 |    00000333  A$demo212 |    00000335  A$demo212
+     00000337  A$demo212 |    00000339  A$demo212 |    0000033B  A$demo212
+     0000033B  _enter_id |    0000033D  A$demo212 |    0000033F  A$demo212
+     00000341  A$demo212 |    00000343  A$demo212 |    00000345  A$demo212
+     00000347  A$demo212 |    00000349  A$demo212 |    0000034B  A$demo212
+     0000034D  A$demo212 |    0000034F  A$demo212 |    00000351  A$demo212
+     00000352  A$demo212 |    00000354  A$demo212 |    00000356  A$demo212
+     00000357  A$demo212 |    00000359  A$demo212 |    0000035B  A$demo212
+     0000035D  A$demo212 |    0000035E  A$demo212 |    00000360  A$demo212
+     00000362  A$demo212 |    00000363  A$demo212 |    00000365  A$demo212
+     00000367  A$demo212 |    00000368  A$demo212 |    0000036A  A$demo212
+     0000036C  A$demo212 |    0000036D  A$demo212 |    0000036F  A$demo212
+     00000371  A$demo212 |    00000373  A$demo212 |    00000374  A$demo212
+     00000374  _enter_re |    00000375  A$demo212 |    00000377  A$demo212
+     00000378  A$demo212 |    0000037A  A$demo212 |    0000037C  A$demo212
+     0000037E  A$demo212 |    0000037F  A$demo212 |    00000381  A$demo212
+     00000383  A$demo212 |    00000384  A$demo212 |    00000386  A$demo212
+     00000388  A$demo212 |    0000038A  A$demo212 |    0000038C  A$demo212
+     0000038E  A$demo212 |    0000038F  A$demo212 |    00000390  A$demo212
+     00000392  A$demo212 |    00000394  A$demo212 |    00000395  A$demo212
+     00000396  A$demo212 |    00000398  A$demo212 |    00000399  A$demo212
+     0000039B  A$demo212 |    0000039D  A$demo212 |    0000039E  A$demo212
+     000003A0  A$demo212 |    000003A1  A$demo212 |    000003A3  A$demo212
+     000003A4  A$demo212 |    000003A6  A$demo212 |    000003A8  A$demo212
+     000003A9  A$demo212 |    000003AA  A$demo212 |    000003AC  A$demo212
+     000003AE  A$demo212 |    000003B0  A$demo212 |    000003B1  A$demo212
+     000003B3  A$demo212 |    000003B5  A$demo212 |    000003B6  A$demo212
+     000003B6  _callback |    000003B8  A$demo212 |    000003BA  A$demo212
+     000003BC  A$demo212 |    000003BE  A$demo212 |    000003C0  A$demo212
+     000003C2  A$demo212 |    000003C4  A$demo212 |    000003C6  A$demo212
+     000003C7  A$demo212 |    000003C9  A$demo212 |    000003CB  A$demo212
+     000003CD  A$demo212 |    000003CF  A$demo212 |    000003D1  A$demo212
+     000003D3  A$demo212 |    000003D4  A$demo212 |    000003D5  A$demo212
+     000003D6  A$demo212 |    000003D6  _wait_bee |    000003D8  A$demo212
+     000003DA  A$demo212 |    000003DC  A$demo212 |    000003DE  A$demo212
+     000003E0  A$demo212 |    000003E2  A$demo212 |    000003E4  A$demo212
+     000003E6  A$demo212 |    000003E8  A$demo212 |    000003EA  A$demo212
+     000003EC  A$demo212 |    000003EE  A$demo212 |    000003F0  A$demo212
+     000003F2  A$demo212 |    000003F4  A$demo212 |    000003F5  A$demo212
+     000003F6  A$demo212 |    000003F6  _enter_pl |    000003F8  A$demo212
+     000003F9  A$demo212 |    000003FB  A$demo212 |    000003FD  A$demo212
+     000003FF  A$demo212 |    00000401  A$demo212 |    00000403  A$demo212
+     00000405  A$demo212 |    00000407  A$demo212 |    00000408  A$demo212
+     0000040A  A$demo212 |    0000040B  A$demo212 |    0000040D  A$demo212
+     0000040F  A$demo212 |    00000411  A$demo212 |    00000413  A$demo212
+     00000415  A$demo212 |    00000416  A$demo212 |    00000418  A$demo212
+     0000041A  A$demo212 |    0000041C  A$demo212 |    0000041E  A$demo212
+     00000420  A$demo212 |    00000421  A$demo212 |    00000423  A$demo212
+     00000425  A$demo212 |    00000426  A$demo212 |    00000428  A$demo212
+     0000042A  A$demo212 |    0000042C  A$demo212 |    0000042E  A$demo212
+     00000430  A$demo212 |    00000432  A$demo212 |    00000433  A$demo212
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+STARTUP_CSEG           00000000    000005B3 =        1459. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000435  A$demo212 |    00000437  A$demo212 |    00000438  A$demo212
+     0000043A  A$demo212 |    0000043B  A$demo212 |    0000043D  A$demo212
+     0000043F  A$demo212 |    00000441  A$demo212 |    00000442  A$demo212
+     00000444  A$demo212 |    00000446  A$demo212 |    00000447  A$demo212
+     00000449  A$demo212 |    0000044A  A$demo212 |    0000044C  A$demo212
+     0000044E  A$demo212 |    00000450  A$demo212 |    00000451  A$demo212
+     00000452  A$demo212 |    00000454  A$demo212 |    00000456  A$demo212
+     00000458  A$demo212 |    0000045A  A$demo212 |    0000045C  A$demo212
+     0000045D  A$demo212 |    0000045F  A$demo212 |    00000460  A$demo212
+     00000462  A$demo212 |    00000463  A$demo212 |    00000465  A$demo212
+     00000466  A$demo212 |    00000466  _timer_ro |    00000467  A$demo212
+     00000469  A$demo212 |    0000046A  A$demo212 |    0000046C  A$demo212
+     0000046E  A$demo212 |    0000046F  A$demo212 |    00000471  A$demo212
+     00000473  A$demo212 |    00000475  A$demo212 |    00000476  A$demo212
+     00000478  A$demo212 |    0000047A  A$demo212 |    0000047B  A$demo212
+     0000047B  _key_mach |    0000047D  A$demo212 |    0000047E  A$demo212
+     00000480  A$demo212 |    00000481  A$demo212 |    00000483  A$demo212
+     00000485  A$demo212 |    00000487  A$demo212 |    00000489  A$demo212
+     0000048A  A$demo212 |    0000048C  A$demo212 |    0000048E  A$demo212
+     00000490  A$demo212 |    00000492  A$demo212 |    00000494  A$demo212
+     00000496  A$demo212 |    00000498  A$demo212 |    0000049A  A$demo212
+     0000049C  A$demo212 |    0000049E  A$demo212 |    000004A0  A$demo212
+     000004A1  A$demo212 |    000004A3  A$demo212 |    000004A4  A$demo212
+     000004A6  A$demo212 |    000004A8  A$demo212 |    000004AA  A$demo212
+     000004AB  A$demo212 |    000004AD  A$demo212 |    000004AF  A$demo212
+     000004B1  A$demo212 |    000004B3  A$demo212 |    000004B5  A$demo212
+     000004B7  A$demo212 |    000004B9  A$demo212 |    000004BA  A$demo212
+     000004BC  A$demo212 |    000004BD  A$demo212 |    000004BF  A$demo212
+     000004C0  A$demo212 |    000004C2  A$demo212 |    000004C2  _init    
+     000004C4  A$demo212 |    000004C6  A$demo212 |    000004C8  A$demo212
+     000004CA  A$demo212 |    000004CB  A$demo212 |    000004CD  A$demo212
+     000004CF  A$demo212 |    000004D1  A$demo212 |    000004D2  A$demo212
+     000004D4  A$demo212 |    000004D6  A$demo212 |    000004D8  A$demo212
+     000004DA  A$demo212 |    000004DB  A$demo212 |    000004DD  A$demo212
+     000004DD  _get_key  |    000004DF  A$demo212 |    000004E1  A$demo212
+     000004E3  A$demo212 |    000004E5  A$demo212 |    000004E6  A$demo212
+     000004E8  A$demo212 |    000004EA  A$demo212 |    000004EC  A$demo212
+     000004EE  A$demo212 |    000004EF  A$demo212 |    000004F1  A$demo212
+     000004F2  A$demo212 |    000004F4  A$demo212 |    000004F6  A$demo212
+     000004F7  A$demo212 |    000004F8  A$demo212 |    000004F9  A$demo212
+     000004F9  __COMMON_ |    000004FA  A$demo212 |    000004FC  A$demo212
+     000004FE  A$demo212 |    00000500  A$demo212 |    00000501  A$demo212
+     00000503  A$demo212 |    00000504  A$demo212 |    00000504  __COMMON_
+     00000506  A$demo212 |    00000507  A$demo212 |    00000508  A$demo212
+     00000508  __COMMON_ |    00000509  A$demo212 |    0000050A  A$demo212
+     0000050B  A$demo212 |    0000050C  A$demo212 |    0000050D  A$demo212
+     0000050D  __COMMON_ |    0000050E  A$demo212 |    0000050F  A$demo212
+     00000510  A$demo212 |    00000512  A$demo212 |    00000513  A$demo212
+     00000514  A$demo212 |    00000514  __COMMON_ |    00000515  A$demo212
+     00000516  A$demo212 |    00000518  A$demo212 |    00000519  A$demo212
+     0000051A  A$demo212 |    0000051A  __COMMON_ |    0000051C  A$demo212
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+STARTUP_CSEG           00000000    000005B3 =        1459. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     0000051D  A$demo212 |    0000051F  A$demo212 |    00000520  A$demo212
+     00000521  A$demo212 |    00000521  __COMMON_ |    00000523  A$demo212
+     00000524  A$demo212 |    00000526  A$demo212 |    00000527  A$demo212
+     00000528  A$demo212 |    00000528  __COMMON_ |    00000529  A$demo212
+     0000052A  A$demo212 |    0000052B  A$demo212 |    0000052C  A$demo212
+     0000052C  __COMMON_ |    0000052E  A$demo212 |    0000052F  A$demo212
+     00000530  A$demo212 |    00000531  A$demo212 |    00000531  __COMMON_
+     00000533  A$demo212 |    00000534  A$demo212 |    00000535  A$demo212
+     00000535  __COMMON_ |    00000536  A$demo212 |    00000538  A$demo212
+     00000539  A$demo212 |    0000053B  A$demo212 |    0000053C  A$demo212
+     0000053D  A$demo212 |    0000053D  __COMMON_ |    0000053F  A$demo212
+     00000541  A$demo212 |    00000543  A$demo212 |    00000544  A$demo212
+     00000546  A$demo212 |    00000548  A$demo212 |    0000054A  A$demo212
+     0000054C  A$demo212 |    0000054E  A$demo212 |    0000054F  A$demo212
+     00000550  A$demo212 |    00000550  __COMMON_ |    00000552  A$demo212
+     00000553  A$demo212 |    00000554  A$demo212 |    00000555  A$demo212
+     00000557  A$demo212 |    00000559  A$demo212 |    0000055B  A$demo212
+     0000055D  A$demo212 |    0000055E  A$demo212 |    00000560  A$demo212
+     00000562  A$demo212 |    00000564  A$demo212 |    00000566  A$demo212
+     00000567  A$demo212 |    00000569  A$demo212 |    0000056A  A$demo212
+     0000056B  A$demo212 |    0000056B  __COMMON_ |    0000056D  A$demo212
+     0000056E  A$demo212 |    00000570  A$demo212 |    00000571  A$demo212
+     00000571  __COMMON_ |    00000573  A$demo212 |    00000574  A$demo212
+     00000576  A$demo212 |    00000578  A$demo212 |    0000057A  A$demo212
+     0000057B  A$demo212 |    0000057B  __COMMON_ |    0000057C  A$demo212
+     0000057E  A$demo212 |    0000057F  A$demo212 |    0000057F  __COMMON_
+     00000580  A$demo212 |    00000582  A$demo212 |    00000584  A$demo212
+     00000585  A$demo212 |    00000585  __COMMON_ |    00000587  A$demo212
+     00000588  A$demo212 |    0000058A  A$demo212 |    0000058C  A$demo212
+     0000058D  A$demo212 |    0000058F  A$demo212 |    00000590  A$demo212
+     00000591  A$demo212 |    00000591  __COMMON_ |    00000593  A$demo212
+     00000595  A$demo212 |    00000596  A$demo212 |    00000598  A$demo212
+     00000599  A$demo212 |    0000059A  A$demo212 |    0000059A  __COMMON_
+     0000059C  A$demo212 |    0000059E  A$demo212 |    000005A0  A$demo212
+     000005A2  A$demo212 |    000005A4  A$demo212 |    000005A5  A$demo212
+     000005A6  A$demo212 |    000005A6  __COMMON_ |    000005A7  A$demo212
+     000005A9  A$demo212 |    000005AA  A$demo212 |    000005AA  __COMMON_
+     000005AB  A$demo212 |    000005AC  A$demo212 |    000005AE  A$demo212
+     000005AF  A$demo212 |    000005B1  A$demo212 |    000005B2  A$demo212
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+CSEG                   000005B3    00000800 =        2048. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     000005B3  A$ms311ap |    000005B3  _api_rec_ |    000005B5  A$ms311ap
+     000005B6  A$ms311ap |    000005B7  A$ms311ap |    000005B8  A$ms311ap
+     000005BA  A$ms311ap |    000005BC  A$ms311ap |    000005BE  A$ms311ap
+     000005C0  A$ms311ap |    000005C2  A$ms311ap |    000005C4  A$ms311ap
+     000005C6  A$ms311ap |    000005C8  A$ms311ap |    000005CA  A$ms311ap
+     000005CC  A$ms311ap |    000005CE  A$ms311ap |    000005D0  A$ms311ap
+     000005D2  A$ms311ap |    000005D4  A$ms311ap |    000005D6  A$ms311ap
+     000005D8  A$ms311ap |    000005DA  A$ms311ap |    000005DC  A$ms311ap
+     000005DE  A$ms311ap |    000005E0  A$ms311ap |    000005E2  A$ms311ap
+     000005E4  A$ms311ap |    000005E6  A$ms311ap |    000005E8  A$ms311ap
+     000005E9  A$ms311ap |    000005EB  A$ms311ap |    000005EC  A$ms311ap
+     000005ED  A$ms311ap |    000005ED  _api_rec_ |    000005EF  A$ms311ap
+     000005F0  A$ms311ap |    000005F1  A$ms311ap |    000005F3  A$ms311ap
+     000005F5  A$ms311ap |    000005F7  A$ms311ap |    000005F9  A$ms311ap
+     000005FA  A$ms311ap |    000005FC  A$ms311ap |    000005FD  A$ms311ap
+     000005FF  A$ms311ap |    00000600  A$ms311ap |    00000602  A$ms311ap
+     00000604  A$ms311ap |    00000606  A$ms311ap |    00000607  A$ms311ap
+     00000609  A$ms311ap |    0000060B  A$ms311ap |    0000060D  A$ms311ap
+     0000060F  A$ms311ap |    00000611  A$ms311ap |    00000613  A$ms311ap
+     00000615  A$ms311ap |    00000617  A$ms311ap |    00000619  A$ms311ap
+     0000061B  A$ms311ap |    0000061D  A$ms311ap |    0000061F  A$ms311ap
+     00000621  A$ms311ap |    00000623  A$ms311ap |    00000625  A$ms311ap
+     00000627  A$ms311ap |    00000629  A$ms311ap |    0000062A  A$ms311ap
+     0000062C  A$ms311ap |    0000062E  A$ms311ap |    00000630  A$ms311ap
+     00000632  A$ms311ap |    00000634  A$ms311ap |    00000636  A$ms311ap
+     00000637  A$ms311ap |    00000639  A$ms311ap |    0000063B  A$ms311ap
+     0000063D  A$ms311ap |    0000063F  A$ms311ap |    00000641  A$ms311ap
+     00000643  A$ms311ap |    00000645  A$ms311ap |    00000647  A$ms311ap
+     00000649  A$ms311ap |    0000064B  A$ms311ap |    0000064D  A$ms311ap
+     0000064F  A$ms311ap |    00000651  A$ms311ap |    00000653  A$ms311ap
+     00000655  A$ms311ap |    00000657  A$ms311ap |    00000659  A$ms311ap
+     0000065B  A$ms311ap |    0000065D  A$ms311ap |    0000065F  A$ms311ap
+     00000660  A$ms311ap |    00000662  A$ms311ap |    00000664  A$ms311ap
+     00000666  A$ms311ap |    00000668  A$ms311ap |    0000066A  A$ms311ap
+     0000066B  A$ms311ap |    0000066B  _api_rec_ |    0000066D  A$ms311ap
+     0000066E  A$ms311ap |    0000066F  A$ms311ap |    00000671  A$ms311ap
+     00000673  A$ms311ap |    00000675  A$ms311ap |    00000677  A$ms311ap
+     00000679  A$ms311ap |    0000067B  A$ms311ap |    0000067D  A$ms311ap
+     0000067F  A$ms311ap |    00000681  A$ms311ap |    00000683  A$ms311ap
+     00000685  A$ms311ap |    00000687  A$ms311ap |    00000689  A$ms311ap
+     0000068B  A$ms311ap |    0000068D  A$ms311ap |    0000068F  A$ms311ap
+     00000690  A$ms311ap |    00000692  A$ms311ap |    00000693  A$ms311ap
+     00000694  A$ms311ap |    00000695  A$ms311ap |    00000696  A$clearfr
+     00000696  _api_clea |    00000698  A$clearfr |    0000069A  A$clearfr
+     0000069C  A$clearfr |    0000069E  A$clearfr |    0000069F  A$clearfr
+     000006A0  A$clearfr |    000006A2  A$clearfr |    000006A4  A$clearfr
+     000006A5  A$api_amp |    000006A5  _api_amp_ |    000006A6  A$api_amp
+     000006A8  A$api_amp |    000006AA  A$api_amp |    000006AB  A$api_amp
+     000006AB  _api_amp_ |    000006AD  A$api_amp |    000006AF  A$api_amp
+     000006B0  A$api_amp |    000006B0  _api_amp_ |    000006B2  A$api_amp
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+CSEG                   000005B3    00000800 =        2048. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     000006B3  A$api_amp |    000006B4  A$api_amp |    000006B6  A$api_amp
+     000006B8  A$api_amp |    000006BA  A$api_amp |    000006BC  A$api_amp
+     000006BE  A$api_amp |    000006C0  A$api_amp |    000006C2  A$api_amp
+     000006C4  A$api_amp |    000006C6  A$api_amp |    000006C8  A$api_amp
+     000006CA  A$api_amp |    000006CB  A$api_amp |    000006CD  A$api_amp
+     000006CF  A$api_amp |    000006D1  A$api_amp |    000006D3  A$api_amp
+     000006D5  A$api_amp |    000006D7  A$api_amp |    000006D9  A$api_amp
+     000006DB  A$api_amp |    000006DD  A$api_amp |    000006DE  A$api_amp
+     000006E0  A$api_amp |    000006E1  A$api_amp |    000006E3  A$api_amp
+     000006E4  A$api_amp |    000006E6  A$api_amp |    000006E8  A$api_amp
+     000006EA  A$api_amp |    000006EB  A$api_amp |    000006ED  A$api_amp
+     000006EF  A$api_amp |    000006F1  A$api_amp |    000006F3  A$api_amp
+     000006F5  A$api_amp |    000006F7  A$api_amp |    000006F9  A$api_amp
+     000006FB  A$api_amp |    000006FD  A$api_amp |    000006FF  A$api_amp
+     00000701  A$api_amp |    00000703  A$api_amp |    00000705  A$api_amp
+     00000707  A$api_amp |    00000709  A$api_amp |    0000070B  A$api_amp
+     0000070D  A$api_amp |    0000070F  A$api_amp |    00000711  A$api_amp
+     00000713  A$api_amp |    00000715  A$api_amp |    00000716  A$api_amp
+     00000718  A$api_amp |    0000071A  A$api_amp |    0000071C  A$api_amp
+     0000071E  A$api_amp |    00000720  A$api_amp |    00000721  A$dc_canc
+     00000721  _api_DC_c |    00000723  A$dc_canc |    00000724  A$dc_canc
+     00000725  A$dc_canc |    00000727  A$dc_canc |    00000729  A$dc_canc
+     0000072B  A$dc_canc |    0000072D  A$dc_canc |    0000072F  A$dc_canc
+     00000731  A$dc_canc |    00000733  A$dc_canc |    00000735  A$dc_canc
+     00000736  A$dc_canc |    00000738  A$dc_canc |    0000073A  A$dc_canc
+     0000073C  A$dc_canc |    0000073E  A$dc_canc |    00000740  A$dc_canc
+     00000742  A$dc_canc |    00000744  A$dc_canc |    00000746  A$dc_canc
+     00000747  A$dc_canc |    00000748  A$dc_canc |    00000749  A$dc_canc
+     0000074A  A$dc_canc |    0000074C  A$dc_canc |    0000074E  A$dc_canc
+     00000750  A$dc_canc |    00000752  A$dc_canc |    00000754  A$dc_canc
+     00000756  A$dc_canc |    00000758  A$dc_canc |    0000075A  A$dc_canc
+     0000075C  A$dc_canc |    0000075E  A$dc_canc |    00000760  A$dc_canc
+     00000762  A$dc_canc |    00000764  A$dc_canc |    00000766  A$dc_canc
+     00000768  A$dc_canc |    0000076A  A$dc_canc |    0000076B  A$dc_canc
+     0000076D  A$dc_canc |    0000076F  A$dc_canc |    00000771  A$dc_canc
+     00000772  A$dc_canc |    00000774  A$dc_canc |    00000776  A$dc_canc
+     00000778  A$dc_canc |    0000077A  A$dc_canc |    0000077B  A$dc_canc
+     0000077C  A$dc_canc |    0000077D  A$dc_canc |    0000077F  A$dc_canc
+     00000781  A$dc_canc |    00000783  A$dc_canc |    00000785  A$dc_canc
+     00000787  A$dc_canc |    00000789  A$dc_canc |    0000078B  A$dc_canc
+     0000078D  A$dc_canc |    0000078E  A$dc_canc |    00000790  A$dc_canc
+     00000792  A$dc_canc |    00000794  A$dc_canc |    00000795  A$dc_canc
+     00000796  A$dc_canc |    00000798  A$dc_canc |    0000079A  A$dc_canc
+     0000079C  A$dc_canc |    0000079D  A$dc_canc |    0000079F  A$dc_canc
+     000007A0  A$dc_canc |    000007A2  A$dc_canc |    000007A3  A$dc_canc
+     000007A5  A$dc_canc |    000007A7  A$dc_canc |    000007A9  A$dc_canc
+     000007AB  A$dc_canc |    000007AD  A$dc_canc |    000007AF  A$dc_canc
+     000007B1  A$dc_canc |    000007B3  A$dc_canc |    000007B4  A$dc_canc
+     000007B6  A$dc_canc |    000007B8  A$dc_canc |    000007B9  A$dc_canc
+     000007BA  A$dc_canc |    000007BB  A$dc_canc |    000007BD  A$dc_canc
+     000007BE  A$dc_canc |    000007C0  A$dc_canc |    000007C2  A$dc_canc
+ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+CSEG                   000005B3    00000800 =        2048. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     000007C4  A$dc_canc |    000007C6  A$dc_canc |    000007C8  A$dc_canc
+     000007CA  A$dc_canc |    000007CC  A$dc_canc |    000007CE  A$dc_canc
+     000007D0  A$dc_canc |    000007D2  A$dc_canc |    000007D4  A$dc_canc
+     000007D6  A$dc_canc |    000007D8  A$dc_canc |    000007DA  A$dc_canc
+     000007DC  A$dc_canc |    000007DE  A$dc_canc |    000007E0  A$dc_canc
+     000007E2  A$dc_canc |    000007E4  A$dc_canc |    000007E6  A$dc_canc
+     000007E8  A$dc_canc |    000007EA  A$dc_canc |    000007EC  A$dc_canc
+     000007EE  A$dc_canc |    000007F0  A$dc_canc |    000007F1  A$dc_canc
+     000007F3  A$dc_canc |    000007F4  A$dc_canc |    000007F5  A$dc_canc
+     000007F6  A$dc_canc |    000007F8  A$dc_canc |    000007F9  A$_ms311_
+     000007F9  __ms311_c |    000007FB  A$_ms311_ |    000007FD  A$_ms311_
+     000007FF  A$_ms311_ |    00000801  A$_ms311_ |    00000802  A$_ms311_
+     00000804  A$_ms311_ |    00000806  A$_ms311_ |    00000808  A$_ms311_
+     0000080A  A$_ms311_ |    0000080B  A$_ms311_ |    0000080C  A$_ms311_
+     0000080D  A$_ms311_ |    0000080E  A$_ms311_ |    0000080F  A$_ms311_
+     00000810  A$_ms311_ |    00000811  A$_ms311_ |    00000812  A$_ms311_
+     00000814  A$_ms311_ |    00000816  A$_ms311_ |    00000818  A$_ms311_
+     00000819  A$_ms311_ |    0000081B  A$_ms311_ |    0000081D  A$_ms311_
+     0000081F  A$_ms311_ |    00000821  A$_ms311_ |    00000823  A$_ms311_
+     00000825  A$_ms311_ |    00000827  A$_ms311_ |    00000829  A$_ms311_
+     0000082B  A$_ms311_ |    0000082D  A$_ms311_ |    0000082F  A$_ms311_
+     00000831  A$_ms311_ |    00000833  A$_ms311_ |    00000835  A$_ms311_
+     00000836  A$_ms311_ |    00000837  A$_ms311_ |    00000839  A$_ms311_
+     0000083A  A$_ms311_ |    0000083C  A$_ms311_ |    0000083E  A$_ms311_
+     00000840  A$_ms311_ |    00000842  A$_ms311_ |    00000844  A$_ms311_
+     00000846  A$_ms311_ |    00000848  A$_ms311_ |    0000084A  A$_ms311_
+     0000084C  A$_ms311_ |    0000084E  A$rec_job |    0000084E  _api_play
+     00000850  A$rec_job |    00000851  A$rec_job |    00000852  A$rec_job
+     00000853  A$rec_job |    00000854  A$rec_job |    00000856  A$rec_job
+     00000858  A$rec_job |    0000085A  A$rec_job |    0000085C  A$rec_job
+     0000085E  A$rec_job |    00000860  A$rec_job |    00000862  A$rec_job
+     00000863  A$rec_job |    00000865  A$rec_job |    00000867  A$rec_job
+     00000869  A$rec_job |    0000086B  A$rec_job |    0000086D  A$rec_job
+     0000086F  A$rec_job |    00000871  A$rec_job |    00000873  A$rec_job
+     00000875  A$rec_job |    00000877  A$rec_job |    00000879  A$rec_job
+     0000087B  A$rec_job |    0000087D  A$rec_job |    0000087F  A$rec_job
+     00000881  A$rec_job |    00000883  A$rec_job |    00000885  A$rec_job
+     00000887  A$rec_job |    00000889  A$rec_job |    0000088B  A$rec_job
+     0000088D  A$rec_job |    0000088E  A$rec_job |    00000890  A$rec_job
+     00000892  A$rec_job |    00000894  A$rec_job |    00000896  A$rec_job
+     00000898  A$rec_job |    0000089A  A$rec_job |    0000089C  A$rec_job
+     0000089E  A$rec_job |    0000089F  A$rec_job |    000008A1  A$rec_job
+     000008A3  A$rec_job |    000008A4  A$rec_job |    000008A5  A$rec_job
+     000008A7  A$rec_job |    000008A9  A$rec_job |    000008AB  A$rec_job
+     000008AC  A$rec_job |    000008AE  A$rec_job |    000008B0  A$rec_job
+     000008B2  A$rec_job |    000008B4  A$rec_job |    000008B6  A$rec_job
+     000008B8  A$rec_job |    000008BA  A$rec_job |    000008BC  A$rec_job
+     000008BE  A$rec_job |    000008C0  A$rec_job |    000008C2  A$rec_job
+     000008C3  A$rec_job |    000008C5  A$rec_job |    000008C6  A$rec_job
+     000008C8  A$rec_job |    000008CA  A$rec_job |    000008CC  A$rec_job
+     000008CD  A$rec_job |    000008CE  A$rec_job |    000008D0  A$rec_job
+ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+CSEG                   000005B3    00000800 =        2048. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     000008D2  A$rec_job |    000008D3  A$rec_job |    000008D5  A$rec_job
+     000008D7  A$rec_job |    000008D9  A$rec_job |    000008DA  A$rec_job
+     000008DC  A$rec_job |    000008DE  A$rec_job |    000008E0  A$rec_job
+     000008E2  A$rec_job |    000008E4  A$rec_job |    000008E6  A$rec_job
+     000008E8  A$rec_job |    000008EA  A$rec_job |    000008EC  A$rec_job
+     000008EE  A$rec_job |    000008EF  A$rec_job |    000008F1  A$rec_job
+     000008F3  A$rec_job |    000008F5  A$rec_job |    000008F7  A$rec_job
+     000008F9  A$rec_job |    000008FB  A$rec_job |    000008FD  A$rec_job
+     000008FF  A$rec_job |    00000901  A$rec_job |    00000903  A$rec_job
+     00000905  A$rec_job |    00000907  A$rec_job |    00000909  A$rec_job
+     0000090B  A$rec_job |    0000090D  A$rec_job |    0000090F  A$rec_job
+     00000911  A$rec_job |    00000913  A$rec_job |    00000915  A$rec_job
+     00000916  A$rec_job |    00000917  A$rec_job |    00000918  A$rec_job
+     0000091A  A$rec_job |    0000091C  A$rec_job |    0000091E  A$rec_job
+     00000920  A$rec_job |    00000922  A$rec_job |    00000923  A$rec_job
+     00000923  _api_rec_ |    00000925  A$rec_job |    00000926  A$rec_job
+     00000927  A$rec_job |    00000928  A$rec_job |    0000092A  A$rec_job
+     0000092C  A$rec_job |    0000092E  A$rec_job |    00000930  A$rec_job
+     00000932  A$rec_job |    00000934  A$rec_job |    00000935  A$rec_job
+     00000937  A$rec_job |    00000938  A$rec_job |    00000939  A$rec_job
+     0000093B  A$rec_job |    0000093D  A$rec_job |    0000093F  A$rec_job
+     00000941  A$rec_job |    00000943  A$rec_job |    00000944  A$rec_job
+     00000946  A$rec_job |    00000948  A$rec_job |    0000094A  A$rec_job
+     0000094C  A$rec_job |    0000094E  A$rec_job |    00000950  A$rec_job
+     00000952  A$rec_job |    00000954  A$rec_job |    00000956  A$rec_job
+     00000958  A$rec_job |    0000095A  A$rec_job |    0000095C  A$rec_job
+     0000095E  A$rec_job |    00000960  A$rec_job |    00000961  A$rec_job
+     00000963  A$rec_job |    00000964  A$rec_job |    00000965  A$rec_job
+     00000967  A$rec_job |    00000969  A$rec_job |    0000096B  A$rec_job
+     0000096D  A$rec_job |    0000096F  A$rec_job |    00000970  A$rec_job
+     00000971  A$rec_job |    00000972  A$rec_job |    00000973  A$rec_job
+     00000975  A$rec_job |    00000977  A$rec_job |    00000979  A$rec_job
+     0000097B  A$rec_job |    0000097D  A$rec_job |    0000097F  A$rec_job
+     00000981  A$rec_job |    00000983  A$rec_job |    00000985  A$rec_job
+     00000987  A$rec_job |    00000989  A$rec_job |    0000098B  A$rec_job
+     0000098D  A$rec_job |    0000098F  A$rec_job |    00000991  A$rec_job
+     00000993  A$rec_job |    00000995  A$rec_job |    00000996  A$rec_job
+     00000998  A$rec_job |    00000999  A$rec_job |    0000099B  A$rec_job
+     0000099D  A$rec_job |    0000099F  A$rec_job |    000009A1  A$rec_job
+     000009A3  A$rec_job |    000009A4  A$rec_job |    000009A6  A$rec_job
+     000009A7  A$rec_job |    000009A9  A$rec_job |    000009AB  A$rec_job
+     000009AD  A$rec_job |    000009AF  A$rec_job |    000009B1  A$rec_job
+     000009B2  A$rec_job |    000009B3  A$rec_job |    000009B5  A$rec_job
+     000009B6  A$rec_job |    000009B7  A$rec_job |    000009B8  A$rec_job
+     000009B9  A$rec_job |    000009BB  A$rec_job |    000009BC  A$rec_job
+     000009BC  _api_rec_ |    000009BE  A$rec_job |    000009BF  A$rec_job
+     000009C0  A$rec_job |    000009C1  A$rec_job |    000009C3  A$rec_job
+     000009C5  A$rec_job |    000009C7  A$rec_job |    000009C8  A$rec_job
+     000009CA  A$rec_job |    000009CC  A$rec_job |    000009CE  A$rec_job
+     000009CF  A$rec_job |    000009D1  A$rec_job |    000009D3  A$rec_job
+     000009D4  A$rec_job |    000009D6  A$rec_job |    000009D7  A$rec_job
+ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+CSEG                   000005B3    00000800 =        2048. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     000009D9  A$rec_job |    000009DB  A$rec_job |    000009DD  A$rec_job
+     000009DE  A$rec_job |    000009DF  A$rec_job |    000009E1  A$rec_job
+     000009E2  A$rec_job |    000009E3  A$rec_job |    000009E5  A$rec_job
+     000009E7  A$rec_job |    000009E9  A$rec_job |    000009EB  A$rec_job
+     000009EC  A$rec_job |    000009EE  A$rec_job |    000009F0  A$rec_job
+     000009F1  A$rec_job |    000009F3  A$rec_job |    000009F5  A$rec_job
+     000009F6  A$rec_job |    000009F7  A$rec_job |    000009F9  A$rec_job
+     000009FA  A$rec_job |    000009FB  A$rec_job |    000009FB  _api_rec_
+     000009FD  A$rec_job |    000009FE  A$rec_job |    000009FF  A$rec_job
+     00000A00  A$rec_job |    00000A02  A$rec_job |    00000A04  A$rec_job
+     00000A06  A$rec_job |    00000A07  A$rec_job |    00000A09  A$rec_job
+     00000A0B  A$rec_job |    00000A0D  A$rec_job |    00000A0E  A$rec_job
+     00000A10  A$rec_job |    00000A12  A$rec_job |    00000A14  A$rec_job
+     00000A16  A$rec_job |    00000A18  A$rec_job |    00000A1A  A$rec_job
+     00000A1B  A$rec_job |    00000A1D  A$rec_job |    00000A1F  A$rec_job
+     00000A21  A$rec_job |    00000A22  A$rec_job |    00000A23  A$rec_job
+     00000A25  A$rec_job |    00000A27  A$rec_job |    00000A28  A$rec_job
+     00000A2A  A$rec_job |    00000A2C  A$rec_job |    00000A2D  A$rec_job
+     00000A2F  A$rec_job |    00000A31  A$rec_job |    00000A33  A$rec_job
+     00000A35  A$rec_job |    00000A37  A$rec_job |    00000A38  A$rec_job
+     00000A3A  A$rec_job |    00000A3B  A$rec_job |    00000A3D  A$rec_job
+     00000A3F  A$rec_job |    00000A41  A$rec_job |    00000A43  A$rec_job
+     00000A45  A$rec_job |    00000A46  A$rec_job |    00000A48  A$rec_job
+     00000A49  A$rec_job |    00000A4B  A$rec_job |    00000A4D  A$rec_job
+     00000A4E  A$rec_job |    00000A4F  A$rec_job |    00000A51  A$rec_job
+     00000A52  A$rec_job |    00000A53  A$rec_job |    00000A54  A$rec_job
+     00000A55  A$rec_job |    00000A57  A$rec_job |    00000A58  A$api_pla
+     00000A58  _api_play |    00000A5A  A$api_pla |    00000A5B  A$api_pla
+     00000A5C  A$api_pla |    00000A5D  A$api_pla |    00000A5F  A$api_pla
+     00000A61  A$api_pla |    00000A63  A$api_pla |    00000A65  A$api_pla
+     00000A67  A$api_pla |    00000A69  A$api_pla |    00000A6B  A$api_pla
+     00000A6D  A$api_pla |    00000A6F  A$api_pla |    00000A71  A$api_pla
+     00000A73  A$api_pla |    00000A75  A$api_pla |    00000A77  A$api_pla
+     00000A79  A$api_pla |    00000A7B  A$api_pla |    00000A7D  A$api_pla
+     00000A7F  A$api_pla |    00000A81  A$api_pla |    00000A82  A$api_pla
+     00000A84  A$api_pla |    00000A86  A$api_pla |    00000A88  A$api_pla
+     00000A89  A$api_pla |    00000A8B  A$api_pla |    00000A8D  A$api_pla
+     00000A8F  A$api_pla |    00000A91  A$api_pla |    00000A93  A$api_pla
+     00000A95  A$api_pla |    00000A97  A$api_pla |    00000A99  A$api_pla
+     00000A9B  A$api_pla |    00000A9D  A$api_pla |    00000A9F  A$api_pla
+     00000AA1  A$api_pla |    00000AA3  A$api_pla |    00000AA5  A$api_pla
+     00000AA7  A$api_pla |    00000AA9  A$api_pla |    00000AAB  A$api_pla
+     00000AAD  A$api_pla |    00000AAE  A$api_pla |    00000AB0  A$api_pla
+     00000AB2  A$api_pla |    00000AB3  A$api_pla |    00000AB4  A$api_pla
+     00000AB6  A$api_pla |    00000AB8  A$api_pla |    00000ABA  A$api_pla
+     00000ABC  A$api_pla |    00000ABE  A$api_pla |    00000ABF  A$api_pla
+     00000AC1  A$api_pla |    00000AC3  A$api_pla |    00000AC5  A$api_pla
+     00000AC7  A$api_pla |    00000AC8  A$api_pla |    00000ACA  A$api_pla
+     00000ACC  A$api_pla |    00000ACE  A$api_pla |    00000AD0  A$api_pla
+     00000AD2  A$api_pla |    00000AD3  A$api_pla |    00000AD4  A$api_pla
+     00000AD6  A$api_pla |    00000AD8  A$api_pla |    00000ADA  A$api_pla
+ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+CSEG                   000005B3    00000800 =        2048. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000ADC  A$api_pla |    00000ADE  A$api_pla |    00000ADF  A$api_pla
+     00000AE1  A$api_pla |    00000AE3  A$api_pla |    00000AE4  A$api_pla
+     00000AE6  A$api_pla |    00000AE8  A$api_pla |    00000AEA  A$api_pla
+     00000AEC  A$api_pla |    00000AEE  A$api_pla |    00000AEF  A$api_pla
+     00000AF1  A$api_pla |    00000AF3  A$api_pla |    00000AF5  A$api_pla
+     00000AF6  A$api_pla |    00000AF8  A$api_pla |    00000AF9  A$api_pla
+     00000AFA  A$api_pla |    00000AFC  A$api_pla |    00000AFE  A$api_pla
+     00000B00  A$api_pla |    00000B02  A$api_pla |    00000B04  A$api_pla
+     00000B06  A$api_pla |    00000B08  A$api_pla |    00000B0A  A$api_pla
+     00000B0C  A$api_pla |    00000B0E  A$api_pla |    00000B10  A$api_pla
+     00000B12  A$api_pla |    00000B14  A$api_pla |    00000B15  A$api_pla
+     00000B17  A$api_pla |    00000B19  A$api_pla |    00000B1B  A$api_pla
+     00000B1D  A$api_pla |    00000B1F  A$api_pla |    00000B21  A$api_pla
+     00000B23  A$api_pla |    00000B25  A$api_pla |    00000B27  A$api_pla
+     00000B28  A$api_pla |    00000B29  A$api_pla |    00000B2B  A$api_pla
+     00000B2D  A$api_pla |    00000B2E  A$api_pla |    00000B2E  _api_play
+     00000B2F  A$api_pla |    00000B31  A$api_pla |    00000B32  A$api_tim
+     00000B32  _api_time |    00000B33  A$api_tim |    00000B35  A$api_tim
+     00000B36  A$api_tim |    00000B37  A$api_tim |    00000B37  _api_time
+     00000B39  A$api_tim |    00000B3A  A$api_tim |    00000B3B  A$api_tim
+     00000B3D  A$api_tim |    00000B3F  A$api_tim |    00000B41  A$api_tim
+     00000B43  A$api_tim |    00000B44  A$api_tim |    00000B46  A$api_tim
+     00000B47  A$api_tim |    00000B48  A$api_std |    00000B48  _api_ente
+     00000B4A  A$api_std |    00000B4B  A$api_std |    00000B4C  A$api_std
+     00000B4E  A$api_std |    00000B50  A$api_std |    00000B52  A$api_std
+     00000B54  A$api_std |    00000B56  A$api_std |    00000B58  A$api_std
+     00000B5A  A$api_std |    00000B5C  A$api_std |    00000B5E  A$api_std
+     00000B60  A$api_std |    00000B62  A$api_std |    00000B64  A$api_std
+     00000B66  A$api_std |    00000B68  A$api_std |    00000B69  A$api_std
+     00000B6B  A$api_std |    00000B6C  A$api_std |    00000B6D  A$api_std
+     00000B6E  A$api_std |    00000B6F  A$api_std |    00000B71  A$api_std
+     00000B73  A$api_std |    00000B74  A$ms311ap |    00000B74  _api_beep
+     00000B75  A$ms311ap |    00000B77  A$ms311ap |    00000B79  A$ms311ap
+     00000B7A  A$ms311ap |    00000B7A  _api_beep |    00000B7C  A$ms311ap
+     00000B7D  A$ms311ap |    00000B7E  A$ms311ap |    00000B80  A$ms311ap
+     00000B82  A$ms311ap |    00000B84  A$ms311ap |    00000B86  A$ms311ap
+     00000B88  A$ms311ap |    00000B8A  A$ms311ap |    00000B8C  A$ms311ap
+     00000B8E  A$ms311ap |    00000B90  A$ms311ap |    00000B92  A$ms311ap
+     00000B94  A$ms311ap |    00000B96  A$ms311ap |    00000B97  A$ms311ap
+     00000B99  A$ms311ap |    00000B9A  A$ms311ap |    00000B9B  A$_sp_dec
+     00000B9B  __sp_dec  |    00000B9D  A$_sp_dec |    00000B9F  A$_sp_dec
+     00000BA1  A$_sp_dec |    00000BA3  A$_sp_dec |    00000BA5  A$_sp_dec
+     00000BA7  A$_sp_dec |    00000BA8  A$api_set |    00000BA8  _api_set_
+     00000BAA  A$api_set |    00000BAB  A$api_set |    00000BAC  A$api_set
+     00000BAE  A$api_set |    00000BB0  A$api_set |    00000BB2  A$api_set
+     00000BB4  A$api_set |    00000BB6  A$api_set |    00000BB8  A$api_set
+     00000BBA  A$api_set |    00000BBB  A$api_set |    00000BBD  A$api_set
+     00000BBE  A$api_set |    00000BBF  A$api_set |    00000BC0  A$api_dsl
+     00000BC0  _api_ente |    00000BC1  A$api_dsl |    00000BC3  A$api_dsl
+     00000BC5  A$api_dsl |    00000BC7  A$api_dsl |    00000BC9  A$api_dsl
+     00000BCA  A$api_dsl |    00000BCC  A$api_dsl |    00000BCE  A$api_dsl
+ASxxxx Linker V03.00 + NoICE + sdld,  page 17.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+CSEG                   000005B3    00000800 =        2048. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000BD0  A$api_dsl |    00000BD1  A$api_dsl |    00000BD3  A$api_dsl
+     00000BD5  A$api_dsl |    00000BD7  A$api_dsl |    00000BD8  A$api_b12
+     00000BD8  _api_b12_ |    00000BDA  A$api_b12 |    00000BDB  A$api_b12
+     00000BDC  A$api_b12 |    00000BDE  A$api_b12 |    00000BE0  A$api_b12
+     00000BE1  A$api_b12 |    00000BE3  A$api_b12 |    00000BE5  A$api_b12
+     00000BE7  A$api_b12 |    00000BE9  A$api_b12 |    00000BEB  A$api_b12
+     00000BEC  A$api_b12 |    00000BEE  A$api_b12 |    00000BF0  A$api_b12
+     00000BF2  A$api_b12 |    00000BF4  A$api_b12 |    00000BF6  A$api_b12
+     00000BF8  A$api_b12 |    00000BF9  A$api_b12 |    00000BFB  A$api_b12
+     00000BFC  A$api_b12 |    00000BFE  A$api_b12 |    00000BFF  A$api_b12
+     00000C01  A$api_b12 |    00000C03  A$api_b12 |    00000C04  A$api_b12
+     00000C06  A$api_b12 |    00000C07  A$api_b12 |    00000C09  A$api_b12
+     00000C0B  A$api_b12 |    00000C0C  A$api_b12 |    00000C0E  A$api_b12
+     00000C0F  A$api_b12 |    00000C10  A$api_b12 |    00000C12  A$api_b12
+     00000C14  A$api_b12 |    00000C16  A$api_b12 |    00000C18  A$api_b12
+     00000C1A  A$api_b12 |    00000C1C  A$api_b12 |    00000C1E  A$api_b12
+     00000C20  A$api_b12 |    00000C22  A$api_b12 |    00000C24  A$api_b12
+     00000C26  A$api_b12 |    00000C28  A$api_b12 |    00000C2A  A$api_b12
+     00000C2C  A$api_b12 |    00000C2D  A$api_b12 |    00000C2F  A$api_b12
+     00000C31  A$api_b12 |    00000C33  A$api_b12 |    00000C35  A$api_b12
+     00000C37  A$api_b12 |    00000C39  A$api_b12 |    00000C3B  A$api_b12
+     00000C3D  A$api_b12 |    00000C3F  A$api_b12 |    00000C40  A$api_b12
+     00000C42  A$api_b12 |    00000C44  A$api_b12 |    00000C46  A$api_b12
+     00000C48  A$api_b12 |    00000C4A  A$api_b12 |    00000C4C  A$api_b12
+     00000C4E  A$api_b12 |    00000C50  A$api_b12 |    00000C52  A$api_b12
+     00000C53  A$api_b12 |    00000C55  A$api_b12 |    00000C57  A$api_b12
+     00000C59  A$api_b12 |    00000C5B  A$api_b12 |    00000C5D  A$api_b12
+     00000C5F  A$api_b12 |    00000C61  A$api_b12 |    00000C62  A$_sp_inc
+     00000C62  __sp_inc  |    00000C64  A$_sp_inc |    00000C66  A$_sp_inc
+     00000C68  A$_sp_inc |    00000C69  A$_sp_inc |    00000C6B  A$_sp_inc
+     00000C6D  A$_sp_inc |    00000C6E  A$ms311ap |    00000C6E  _api_play
+     00000C70  A$ms311ap |    00000C71  A$ms311ap |    00000C72  A$ms311ap
+     00000C73  A$ms311ap |    00000C75  A$ms311ap |    00000C77  A$ms311ap
+     00000C79  A$ms311ap |    00000C7B  A$ms311ap |    00000C7D  A$ms311ap
+     00000C7F  A$ms311ap |    00000C81  A$ms311ap |    00000C82  A$ms311ap
+     00000C84  A$ms311ap |    00000C86  A$ms311ap |    00000C88  A$ms311ap
+     00000C8A  A$ms311ap |    00000C8C  A$ms311ap |    00000C8E  A$ms311ap
+     00000C90  A$ms311ap |    00000C92  A$ms311ap |    00000C94  A$ms311ap
+     00000C96  A$ms311ap |    00000C98  A$ms311ap |    00000C9A  A$ms311ap
+     00000C9C  A$ms311ap |    00000C9E  A$ms311ap |    00000CA0  A$ms311ap
+     00000CA2  A$ms311ap |    00000CA4  A$ms311ap |    00000CA6  A$ms311ap
+     00000CA8  A$ms311ap |    00000CAA  A$ms311ap |    00000CAC  A$ms311ap
+     00000CAE  A$ms311ap |    00000CAF  A$ms311ap |    00000CB1  A$ms311ap
+     00000CB3  A$ms311ap |    00000CB5  A$ms311ap |    00000CB7  A$ms311ap
+     00000CB9  A$ms311ap |    00000CBB  A$ms311ap |    00000CBD  A$ms311ap
+     00000CBF  A$ms311ap |    00000CC1  A$ms311ap |    00000CC2  A$ms311ap
+     00000CC4  A$ms311ap |    00000CC6  A$ms311ap |    00000CC7  A$ms311ap
+     00000CC8  A$ms311ap |    00000CCA  A$ms311ap |    00000CCC  A$ms311ap
+     00000CCE  A$ms311ap |    00000CCF  A$ms311ap |    00000CD1  A$ms311ap
+     00000CD3  A$ms311ap |    00000CD5  A$ms311ap |    00000CD7  A$ms311ap
+     00000CD9  A$ms311ap |    00000CDB  A$ms311ap |    00000CDD  A$ms311ap
+ASxxxx Linker V03.00 + NoICE + sdld,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+CSEG                   000005B3    00000800 =        2048. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000CDE  A$ms311ap |    00000CE0  A$ms311ap |    00000CE2  A$ms311ap
+     00000CE3  A$ms311ap |    00000CE5  A$ms311ap |    00000CE6  A$ms311ap
+     00000CE8  A$ms311ap |    00000CEA  A$ms311ap |    00000CEC  A$ms311ap
+     00000CED  A$ms311ap |    00000CEF  A$ms311ap |    00000CF1  A$ms311ap
+     00000CF2  A$ms311ap |    00000CF4  A$ms311ap |    00000CF6  A$ms311ap
+     00000CF8  A$ms311ap |    00000CFA  A$ms311ap |    00000CFC  A$ms311ap
+     00000CFD  A$ms311ap |    00000CFF  A$ms311ap |    00000D01  A$ms311ap
+     00000D03  A$ms311ap |    00000D05  A$ms311ap |    00000D07  A$ms311ap
+     00000D09  A$ms311ap |    00000D0B  A$ms311ap |    00000D0D  A$ms311ap
+     00000D0F  A$ms311ap |    00000D11  A$ms311ap |    00000D13  A$ms311ap
+     00000D15  A$ms311ap |    00000D17  A$ms311ap |    00000D19  A$ms311ap
+     00000D1B  A$ms311ap |    00000D1D  A$ms311ap |    00000D1E  A$ms311ap
+     00000D20  A$ms311ap |    00000D22  A$ms311ap |    00000D24  A$ms311ap
+     00000D26  A$ms311ap |    00000D28  A$ms311ap |    00000D2A  A$ms311ap
+     00000D2C  A$ms311ap |    00000D2E  A$ms311ap |    00000D30  A$ms311ap
+     00000D32  A$ms311ap |    00000D34  A$ms311ap |    00000D36  A$ms311ap
+     00000D38  A$ms311ap |    00000D3A  A$ms311ap |    00000D3C  A$ms311ap
+     00000D3E  A$ms311ap |    00000D3F  A$ms311ap |    00000D40  A$ms311ap
+     00000D42  A$ms311ap |    00000D44  A$ms311ap |    00000D46  A$ms311ap
+     00000D48  A$ms311ap |    00000D4A  A$ms311ap |    00000D4B  A$api_u2l
+     00000D4B  _api_u2l_ |    00000D4D  A$api_u2l |    00000D4E  A$api_u2l
+     00000D4F  A$api_u2l |    00000D50  A$api_u2l |    00000D51  A$api_u2l
+     00000D52  A$api_u2l |    00000D53  A$api_u2l |    00000D55  A$api_u2l
+     00000D57  A$api_u2l |    00000D59  A$api_u2l |    00000D5B  A$api_u2l
+     00000D5D  A$api_u2l |    00000D5F  A$api_u2l |    00000D61  A$api_u2l
+     00000D63  A$api_u2l |    00000D64  A$api_u2l |    00000D66  A$api_u2l
+     00000D68  A$api_u2l |    00000D6A  A$api_u2l |    00000D6B  A$api_u2l
+     00000D6C  A$api_u2l |    00000D6E  A$api_u2l |    00000D6F  A$api_u2l
+     00000D71  A$api_u2l |    00000D73  A$api_u2l |    00000D74  A$api_u2l
+     00000D76  A$api_u2l |    00000D78  A$api_u2l |    00000D7A  A$api_u2l
+     00000D7C  A$api_u2l |    00000D7E  A$api_u2l |    00000D80  A$api_u2l
+     00000D81  A$api_u2l |    00000D83  A$api_u2l |    00000D85  A$api_u2l
+     00000D86  A$api_u2l |    00000D87  A$api_u2l |    00000D89  A$api_u2l
+     00000D8B  A$api_u2l |    00000D8C  A$api_u2l |    00000D8E  A$api_u2l
+     00000D8F  A$api_u2l |    00000D91  A$api_u2l |    00000D93  A$api_u2l
+     00000D94  A$api_u2l |    00000D95  A$api_u2l |    00000D97  A$api_u2l
+     00000D99  A$api_u2l |    00000D9B  A$api_u2l |    00000D9C  A$api_u2l
+     00000D9E  A$api_u2l |    00000DA0  A$api_u2l |    00000DA2  A$api_u2l
+     00000DA4  A$api_u2l |    00000DA6  A$api_u2l |    00000DA8  A$api_u2l
+     00000DAA  A$api_u2l |    00000DAB  A$api_u2l |    00000DAC  A$api_u2l
+     00000DAD  A$api_u2l |    00000DAE  A$api_u2l |    00000DAF  A$api_u2l
+     00000DB1  A$api_u2l |    00000DB2  A$api_u2l
+ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
+Hexadecimal  [32-Bits]
+
+Area                       Addr        Size        Decimal Bytes (Attributes)
+--------------------       ----        ----        ------- ----- ------------
+SEGC                   00000DB3    00000204 =         516. bytes (REL,CON,CODE,ROM)
+
+        Value  Global            Value  Global            Value  Global    
+        -----  ------            -----  ------            -----  ------    
+     00000DB3  _ms311_ne |    00000DB7  _u2l_low  |    00000EB7  _u2l_high
+ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
+
+Files Linked                              [ module(s) ]
+
+demo212                                   [ demo212 ]
+
+
+Libraries Linked                          [ object file ]
+
+x:\share\sdcc\lib\MS322\ms311sdcc.lib     [ ms311sfr ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ ms311apirec ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ clearfram ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ api_amp ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ dc_cancel ]
+x:\share\sdcc\lib\MS322\ms311sdcc.lib     [ _ms311_cstartup ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ rec_job2 ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ api_play_job ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ apivar ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ api_timer ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ api_stdbymode ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ ms311apibeep ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ u2ltab ]
+x:\share\sdcc\lib\MS322\ms311sdcc.lib     [ _sp_dec ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ api_set_vol ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ api_dsleepmode ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ api_b12_page ]
+x:\share\sdcc\lib\MS322\ms311sdcc.lib     [ _sp_inc ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ ms311apipla ]
+x:\share\sdcc\lib\MS322\ms311sph.lib      [ api_u2l_page ]
+
+
+
